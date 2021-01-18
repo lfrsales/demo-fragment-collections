@@ -1,13 +1,13 @@
 {
 	"fieldSets": [
-	{
-		"fields": [
+		{
+			"fields": [
 				{
-					"name": "data",
-					"label": "Data",
+					"defaultValue": "[[\"data1\", 300, 350, 300, 0, 0, 0],[\"data2\", 130, 100, 140, 200, 150, 50]]",
 					"description": "chart-data",
-					"type": "text",
-					"defaultValue": "[[\"data1\", 300, 350, 300, 0, 0, 0],[\"data2\", 130, 100, 140, 200, 150, 50]]"
+					"label": "Data",
+					"name": "data",
+					"type": "text"
 				}
 			]
 		}

@@ -1,34 +1,34 @@
 {
 	"fieldSets": [
-	{
-		"fields": [
+		{
+			"fields": [
 				{
-					"name": "axisMax",
-					"label": "Axis Max",
+					"defaultValue": "400",
 					"description": "axis-max",
-					"type": "text",
-					"defaultValue": "400"
+					"label": "Axis Max",
+					"name": "axisMax",
+					"type": "text"
 				},
 				{
-					"name": "levelDepth",
-					"label": "Level Depth",
+					"defaultValue": "4",
 					"description": "level-depth",
-					"type": "text",
-					"defaultValue": "4"
+					"label": "Level Depth",
+					"name": "levelDepth",
+					"type": "text"
 				},
 				{
-					"name": "clockwise",
-					"label": "Clockwise",
+					"defaultValue": true,
 					"description": "clockwise",
-					"type": "checkbox",
-					"defaultValue": true
+					"label": "Clockwise",
+					"name": "clockwise",
+					"type": "checkbox"
 				},
 				{
-					"name": "data",
-					"label": "Data",
+					"defaultValue": "[[\"x\", \"Data A\", \"Data B\", \"Data C\", \"Data D\", \"Data E\"],[\"data1\", 330, 350, 200, 380, 150],[\"data2\", 130, 100, 30, 200, 80],[\"data3\", 230, 153, 85, 300, 250]]",
 					"description": "chart-data",
-					"type": "text",
-					"defaultValue": "[[\"x\", \"Data A\", \"Data B\", \"Data C\", \"Data D\", \"Data E\"],[\"data1\", 330, 350, 200, 380, 150],[\"data2\", 130, 100, 30, 200, 80],[\"data3\", 230, 153, 85, 300, 250]]"
+					"label": "Data",
+					"name": "data",
+					"type": "text"
 				}
 			]
 		}

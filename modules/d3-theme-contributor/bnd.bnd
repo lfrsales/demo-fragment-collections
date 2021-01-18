@@ -2,5 +2,5 @@ Bundle-Name: d3-theme-contributor
 Bundle-SymbolicName: d3.theme.contributor
 Bundle-Version: 1.0.0
 Liferay-Theme-Contributor-Type: d3-theme-contributor
-Web-ContextPath: /d3-theme-contributor
 Liferay-Theme-Contributor-Weight: 98
+Web-ContextPath: /d3-theme-contributor
