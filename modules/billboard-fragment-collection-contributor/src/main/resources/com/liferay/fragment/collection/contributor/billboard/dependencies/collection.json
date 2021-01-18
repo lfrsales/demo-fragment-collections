@@ -1,0 +1,8 @@
+{
+    "fragments": [
+        "[block-quote]",
+        "[heading-display]",
+        "[table]"
+    ],
+    "name": "billboard-fragment-collection"
+}

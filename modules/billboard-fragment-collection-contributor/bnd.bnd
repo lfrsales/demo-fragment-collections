@@ -1,0 +1,5 @@
+Bundle-Name: billboard-fragment-collection-contributor
+Bundle-SymbolicName: com.liferay.fragment.collection.contributor.billboard
+Bundle-Version: 1.0.0
+Web-ContextPath: /billboard-fragment-collection-contributor
+-dsannotations-options: inherit

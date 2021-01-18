@@ -1,0 +1,22 @@
+{
+	"fieldSets": [
+	{
+		"fields": [
+				{
+					"name": "title",
+					"label": "Title",
+					"description": "chart-title",
+					"type": "text",
+					"defaultValue": "Donut Chart Title"
+				},
+				{
+					"name": "data",
+					"label": "Data",
+					"description": "chart-data",
+					"type": "text",
+					"defaultValue": "[[\"data1\", 30],[\"data2\", 120],[\"data3\", 75]]"
+				}
+			]
+		}
+	]
+}

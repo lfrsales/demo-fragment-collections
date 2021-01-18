@@ -1,0 +1,15 @@
+{
+	"fieldSets": [
+	{
+		"fields": [
+				{
+					"name": "data",
+					"label": "Data",
+					"description": "chart-data",
+					"type": "text",
+					"defaultValue": "[[\"data1\", 100, 20, 30], [\"data2\", 20, 70, 100]]"
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,36 @@
+{
+	"fieldSets": [
+	{
+		"fields": [
+				{
+					"name": "axisMax",
+					"label": "Axis Max",
+					"description": "axis-max",
+					"type": "text",
+					"defaultValue": "400"
+				},
+				{
+					"name": "levelDepth",
+					"label": "Level Depth",
+					"description": "level-depth",
+					"type": "text",
+					"defaultValue": "4"
+				},
+				{
+					"name": "clockwise",
+					"label": "Clockwise",
+					"description": "clockwise",
+					"type": "checkbox",
+					"defaultValue": true
+				},
+				{
+					"name": "data",
+					"label": "Data",
+					"description": "chart-data",
+					"type": "text",
+					"defaultValue": "[[\"x\", \"Data A\", \"Data B\", \"Data C\", \"Data D\", \"Data E\"],[\"data1\", 330, 350, 200, 380, 150],[\"data2\", 130, 100, 30, 200, 80],[\"data3\", 230, 153, 85, 300, 250]]"
+				}
+			]
+		}
+	]
+}
