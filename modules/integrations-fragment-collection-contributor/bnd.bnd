@@ -1,0 +1,5 @@
+Bundle-Name: integrations-fragment-collection-contributor
+Bundle-SymbolicName: com.liferay.fragment.collection.contributor.integrations
+Bundle-Version: 1.0.0
+Web-ContextPath: /integrations-fragment-collection-contributor
+-dsannotations-options: inherit
