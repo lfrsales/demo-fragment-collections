@@ -25,13 +25,16 @@ import org.osgi.service.component.annotations.Reference;
 /**
  * @author evanthibodeau
  */
-@Component(service = FragmentCollectionContributor.class)
+@Component(
+	property = "fragment.collection.key=BILLBOARD_FRAGMENTS",
+	service = FragmentCollectionContributor.class
+)
 public class BillboardFragmentCollectionContributor
 	extends BaseFragmentCollectionContributor {
 
 	@Override
 	public String getFragmentCollectionKey() {
-		return "billboard-fragments";
+		return "BILLBOARD_FRAGMENTS";
 	}
 
 	@Override
