@@ -1,0 +1,45 @@
+{
+	"fieldSets": [
+		{
+			"fields": [
+				{
+					"defaultValue": "Let me tell you why I love @Liferay ...",
+					"label": "tweet-text",
+					"name": "tweet",
+					"type": "text"
+				},
+				{
+					"dataType": "int",
+					"defaultValue": "4",
+					"label": "icon-size",
+					"name": "iconSize",
+					"type": "select",
+					"typeOptions": {
+						"validValues": [
+							{
+								"label": "x-small",
+								"value": "5"
+							},
+							{
+								"label": "small",
+								"value": "4"
+							},
+							{
+								"label": "medium",
+								"value": "3"
+							},
+							{
+								"label": "large",
+								"value": "2"
+							},
+							{
+								"label": "x-large",
+								"value": "1"
+							}
+						]
+					}
+				}
+			]
+		}
+	]
+}

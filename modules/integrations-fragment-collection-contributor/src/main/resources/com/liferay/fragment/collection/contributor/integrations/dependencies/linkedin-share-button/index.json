@@ -1,0 +1,14 @@
+{
+	"fieldSets": [
+		{
+			"fields": [
+				{
+					"defaultValue": "https://www.liferay.com",
+					"label": "share-url",
+					"name": "shareURL",
+					"type": "text"
+				}
+			]
+		}
+	]
+}

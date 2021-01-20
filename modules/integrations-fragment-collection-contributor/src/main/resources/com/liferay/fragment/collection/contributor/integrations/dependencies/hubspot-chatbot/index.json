@@ -1,0 +1,15 @@
+{
+	"fieldSets": [
+		{
+			"fields": [
+				{
+					"dataType": "string",
+					"defaultValue": "8842647",
+					"label": "tracking-code",
+					"name": "trackingCode",
+					"type": "text"
+				}
+			]
+		}
+	]
+}

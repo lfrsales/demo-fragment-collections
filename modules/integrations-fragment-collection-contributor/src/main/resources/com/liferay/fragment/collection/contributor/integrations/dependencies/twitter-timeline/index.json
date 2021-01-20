@@ -1,0 +1,28 @@
+{
+	"fieldSets": [
+		{
+			"fields": [
+				{
+					"dataType": "string",
+					"defaultValue": "@Liferay",
+					"label": "twitter-handle",
+					"name": "twitterHandle",
+					"type": "text",
+					"typeOptions": {
+						"placeholder": "Placeholder"
+					}
+				},
+				{
+					"dataType": "string",
+					"defaultValue": "3",
+					"label": "number-of-tweets-to-display",
+					"name": "numberOfTweets",
+					"type": "text",
+					"typeOptions": {
+						"placeholder": "Placeholder"
+					}
+				}
+			]
+		}
+	]
+}
