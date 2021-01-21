@@ -1,0 +1,138 @@
+[#assign panelKey = 0 /]
+
+[#macro panel title]
+	[#assign
+		timestamp = .now?long
+		panelKey = panelKey + 1
+	/]
+
+	[#assign id = "${title?replace('[^A-Za-z0-9]', '-', 'r')}${panelKey}${timestamp}" /]
+
+	<fieldset class="panel" role="group">
+		<div class="panel-heading" role="presentation">
+			<div>
+				<a
+					aria-controls="${id}"
+					aria-expanded="false"
+					class="collapse-icon sheet-subtitle collapsed"
+					data-toggle="liferay-collapse"
+					href="#${id}"
+					role="button"
+				>
+					${title}
+					<span class="collapse-icon-closed" id="icon${id}">
+						[@clay["icon"] symbol="angle-right" /]
+					</span>
+					<span class="collapse-icon-open" id="icon${id}">
+						[@clay["icon"] symbol="angle-down" /]
+					</span>
+				</a>
+			</div>
+		</div>
+
+		<div class="panel-collapse collapse" id="${id}" role="presentation">
+			<div class="panel-body p-0">
+				[#nested]
+			</div>
+		</div>
+	</fieldset>
+[/#macro]
+
+[#macro renderObj object title="Show Object"]
+	[#if object?has_content]
+		[@panel title="${title}"]
+			<table class="table table-bordered">
+				<thead>
+					<tr>
+						<th>Key</th>
+						<th>Value</th>
+					</tr>
+				</thead>
+
+				<tbody>
+					[#list object?keys?sort as key]
+						[#attempt]
+							[#assign value = object[key]! /]
+						[#recover]
+							[#assign value = '<em>Not Able to Render</em>' /]
+						[/#attempt]
+
+						[#if value??]
+							<tr>
+								<td style="vertical-align: top; word-break: initial;"><strong>${key}</strong></td>
+
+								<td style="word-break: break-word;">
+									[#if value?is_string || value?is_number]
+										${value}
+									[#elseif value?is_boolean]
+										${value?string('true', 'false')}
+									[#elseif value?is_method]
+										<em>method()</em>
+									[#elseif value?is_sequence]
+										[#list value as i]
+											[#if i?is_hash_ex]
+												[@renderObj object=i title=key /]
+											[#else]
+												${i}
+											[/#if]
+											<br />
+										[/#list]
+									[#elseif value?is_date_like]
+										${value?datetime}
+									[#elseif value?is_hash_ex]
+										[@renderObj object=value title=key /]
+									[#else]
+										<em>Not Able to Render</em>
+									[/#if]
+								</td>
+							</tr>
+						[/#if]
+					[/#list]
+				</tbody>
+			</table>
+		[/@panel]
+	[/#if]
+[/#macro]
+
+<div class="collection-item m-3">
+	<div class="alert alert-info">
+		<p>To use this fragment either place it within a collection fragment to see which attributes are available from <em>request.getAttribute("INFO_LIST_DISPLAY_OBJECT")</em> or place it on a Display Page Template to see which attributes are available from <em>request.getAttribute("LIFERAY_SHARED_LAYOUT_ASSET_ENTRY")</em>.</p>
+		<p class="mb-0">It's important to note that this will only display the attributes of a display page when you view the published display page not when you are editing it.</p>
+	</div>
+
+	[@renderObj object=(request.getAttribute("LIFERAY_SHARED_LAYOUT_ASSET_ENTRY"))! title='request.getAttribute("LIFERAY_SHARED_LAYOUT_ASSET_ENTRY")' /]
+
+	[#assign infoListDisplayObject = (request.getAttribute("INFO_LIST_DISPLAY_OBJECT"))! /]
+
+	[#if infoListDisplayObject?has_content]
+		[@renderObj object=infoListDisplayObject title='request.getAttribute("INFO_LIST_DISPLAY_OBJECT")' /]
+
+		[#assign assetEntryLocalService = serviceLocator.findService("com.liferay.asset.kernel.service.AssetEntryLocalService") /]
+
+		[#assign modelClassName = infoListDisplayObject.modelClassName! /]
+		[#assign resourcePrimKey = infoListDisplayObject.resourcePrimKey! /]
+
+		[#if modelClassName?has_content && resourcePrimKey?has_content]
+			<div class="alert alert-info">
+				[#noparse]
+					<p>In order to use the <em>serviceLocator</em> you must remove it from the "Restricted Classes" list for the FreeMarker Enginer. This can be found in the control panel under "System Settings > Template Engines > FreeMarker Engine".</p>
+					<p>[#assign assetEntryLocalService = serviceLocator.findService("com.liferay.asset.kernel.service.AssetEntryLocalService") /]</p>
+					<p>[#assign modelClassName = infoListDisplayObject.modelClassName! /]<br />[#assign resourcePrimKey = infoListDisplayObject.resourcePrimKey! /]</p>
+					<p class="mb-0">[#assign asset = assetEntryLocalService.getEntry(modelClassName, resourcePrimKey) ]</p>
+				[/#noparse]
+			</div>
+
+			[@renderObj object=assetEntryLocalService.getEntry(modelClassName, resourcePrimKey)! title="Asset Entry from INFO_LIST_DISPLAY_OBJECT" /]
+		[/#if]
+	[/#if]
+
+	[@renderObj object=(request.getAttribute("INFO_ITEM"))! title='request.getAttribute("INFO_ITEM")' /]
+
+	[@renderObj object=(request.getAttribute("LAYOUT_DISPLAY_PAGE_OBJECT_PROVIDER"))! title='request.getAttribute("LAYOUT_DISPLAY_PAGE_OBJECT_PROVIDER")' /]
+
+	[@renderObj object=(request.getAttribute("INFO_ITEM_FIELD_VALUES_PROVIDER"))! title='request.getAttribute("INFO_ITEM_FIELD_VALUES_PROVIDER")' /]
+
+	[@renderObj object=(request.getAttribute("LAYOUT_DISPLAY_PAGE_PROVIDER"))! title='request.getAttribute("LAYOUT_DISPLAY_PAGE_PROVIDER")' /]
+
+	[@renderObj object=(request)! title='request' /]
+</div>

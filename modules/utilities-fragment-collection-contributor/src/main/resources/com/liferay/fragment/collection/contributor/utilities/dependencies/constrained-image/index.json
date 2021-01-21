@@ -1,0 +1,22 @@
+{
+	"fieldSets": [
+		{
+			"fields": [
+				{
+					"dataType": "int",
+					"defaultValue": "3",
+					"label": "aspect-ratio-height",
+					"name": "height",
+					"type": "text"
+				},
+				{
+					"dataType": "int",
+					"defaultValue": "4",
+					"label": "aspect-ratio-width",
+					"name": "width",
+					"type": "text"
+				}
+			]
+		}
+	]
+}
