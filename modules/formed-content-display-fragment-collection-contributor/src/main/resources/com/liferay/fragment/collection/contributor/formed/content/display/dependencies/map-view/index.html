@@ -1,0 +1,44 @@
+<div class="map-view">
+	[#assign assetEntry = "" /]
+
+	[#assign infoListDisplayObject = (request.getAttribute("INFO_LIST_DISPLAY_OBJECT"))! /]
+	[#assign liferaySharedLayoutAssetEntry = (request.getAttribute("LIFERAY_SHARED_LAYOUT_ASSET_ENTRY"))! /]
+
+	[#if infoListDisplayObject?has_content]
+		[#assign assetEntryLocalService = serviceLocator.findService("com.liferay.asset.kernel.service.AssetEntryLocalService") /]
+
+		[#assign modelClassName = infoListDisplayObject.modelClassName! /]
+		[#assign resourcePrimKey = infoListDisplayObject.resourcePrimKey! /]
+
+		[#if modelClassName?has_content && resourcePrimKey?has_content]
+			[#assign assetEntry = assetEntryLocalService.getEntry(modelClassName, resourcePrimKey) /]
+		[/#if]
+	[#elseif liferaySharedLayoutAssetEntry?has_content]
+		[#assign assetEntry = (request.getAttribute("LIFERAY_SHARED_LAYOUT_ASSET_ENTRY"))! /]
+	[/#if]
+
+	[#if assetEntry?has_content && assetEntry.getAssetRenderer??]
+		[#assign assetRenderer = assetEntry.getAssetRenderer() /]
+
+		[#assign ddmFormValuesReader = assetRenderer.getDDMFormValuesReader() /]
+
+		[#assign ddmFormFieldValues = ddmFormValuesReader.getDDMFormFieldValues("ddm-geolocation") /]
+
+		[#assign coordinatesJSONObjects = [] /]
+
+		[#list ddmFormFieldValues as ddmFormFieldValue]
+			[#assign value = ddmFormFieldValue.getValue()
+
+			coordinatesJSONObject = value.getString(locale)?eval /]
+
+			<div>
+				[@liferay_map["map-display"]
+					geolocation=true
+					latitude=coordinatesJSONObject.latitude
+					longitude=coordinatesJSONObject.longitude
+					name="DisplayPageMapView${assetEntry.classPK}"
+				/]
+			</div>
+		[/#list]
+	[/#if]
+</div>

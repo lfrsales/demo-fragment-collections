@@ -1,0 +1,22 @@
+{
+	"fieldSets": [
+		{
+			"fields": [
+				{
+					"dataType": "string",
+					"defaultValue": "category",
+					"description": "Separate categories by commas to ignore them.",
+					"label": "Ignore Categories",
+					"name": "ignoredCategories",
+					"type": "text"
+				},
+				{
+					"defaultValue": false,
+					"label": "Hide if Empty",
+					"name": "hideIfEmpty",
+					"type": "checkbox"
+				}
+			]
+		}
+	]
+}
