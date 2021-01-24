@@ -1,0 +1,5 @@
+Bundle-Name: formed-components-fragment-collection-contributor
+Bundle-SymbolicName: com.liferay.fragment.collection.contributor.formed.components
+Bundle-Version: 1.0.0
+Web-ContextPath: /formed-components-fragment-collection-contributor
+-dsannotations-options: inherit
