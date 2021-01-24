@@ -35,4 +35,12 @@ Since these fragments are packaged as a Contributed Fragment Collection, they wi
 
 *In Progress*
 
+## Contributors
+
+Thanks to our current contributors:
+
+* @ethib137
+* @jverweijL
+* @martin-dominguez
+
 ## Issues & Questions Welcome
