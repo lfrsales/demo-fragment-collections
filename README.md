@@ -25,6 +25,8 @@ In `gradle-local.properties` add the following line to point towards the Liferay
 liferay.workspace.home.dir=/path/to/liferay/home
 ```
 
+`$ blade gw deploy`
+
 ## Usage
 
 Since these fragments are packaged as a Contributed Fragment Collection, they will automatically be available on all sites in your Liferay instance. Thus, you can start using them as you would the OOTB Liferay Fragments. You can see how to add fragments to a content page [here](https://learn.liferay.com/dxp/7.x/en/site-building/creating-pages/building-and-managing-content-pages/building-content-pages.html?highlight=fragments#adding-elements-to-content-pages).
