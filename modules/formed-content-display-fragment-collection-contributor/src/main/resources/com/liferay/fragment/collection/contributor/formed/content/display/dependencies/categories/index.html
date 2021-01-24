@@ -18,7 +18,7 @@
 	[/#if]
 
 	[#assign ignoredCategories = configuration.ignoredCategories?split(",")]
-	
+
 	[#assign ignoredCategories = ignoredCategories?map(category -> category?trim?lower_case)]
 
 	[#if !assetEntry?has_content || assetEntry.categories?size == 0]

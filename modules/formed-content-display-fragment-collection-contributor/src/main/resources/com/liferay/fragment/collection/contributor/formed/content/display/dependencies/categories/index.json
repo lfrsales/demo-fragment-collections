@@ -5,14 +5,13 @@
 				{
 					"dataType": "string",
 					"defaultValue": "category",
-					"description": "Separate categories by commas to ignore them.",
-					"label": "Ignore Categories",
+					"label": "ignore-categories-label",
 					"name": "ignoredCategories",
 					"type": "text"
 				},
 				{
 					"defaultValue": false,
-					"label": "Hide if Empty",
+					"label": "hide-if-empty",
 					"name": "hideIfEmpty",
 					"type": "checkbox"
 				}

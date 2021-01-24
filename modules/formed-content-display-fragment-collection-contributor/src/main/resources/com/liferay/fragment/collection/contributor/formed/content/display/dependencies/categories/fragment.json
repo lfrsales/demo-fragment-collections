@@ -1,8 +1,6 @@
 {
-	"cssPath": "styles.css",
-	"configurationPath": "configuration.json",
-	"htmlPath": "index.html",
-	"jsPath": "main.js",
-	"name": "Categories",
+	"fragmentEntryKey": "categories",
+	"name": "categories",
+	"thumbnail": "categories.png",
 	"type": "component"
 }
