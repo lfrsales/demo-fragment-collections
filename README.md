@@ -44,3 +44,13 @@ Thanks to our current contributors:
 * @martin-dominguez
 
 ## Issues & Questions Welcome
+
+## Contributing Guidelines
+
+Pull requests welcome.
+
+Fragment documentation can be auto generated using the following command:
+
+```
+$ python3 generateFragmentDocs.py
+```
