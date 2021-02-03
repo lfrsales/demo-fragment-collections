@@ -5,7 +5,7 @@
 				{
 					"defaultValue": "[[\"data1\", 300, 350, 300, 0, 0, 0],[\"data2\", 130, 100, 140, 200, 150, 50]]",
 					"description": "chart-data",
-					"label": "Data",
+					"label": "data",
 					"name": "data",
 					"type": "text"
 				}

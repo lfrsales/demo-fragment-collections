@@ -5,14 +5,14 @@
 				{
 					"defaultValue": "Donut Chart Title",
 					"description": "chart-title",
-					"label": "Title",
+					"label": "title",
 					"name": "title",
 					"type": "text"
 				},
 				{
 					"defaultValue": "[[\"data1\", 30],[\"data2\", 120],[\"data3\", 75]]",
 					"description": "chart-data",
-					"label": "Data",
+					"label": "data",
 					"name": "data",
 					"type": "text"
 				}

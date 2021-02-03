@@ -5,7 +5,7 @@
 				{
 					"dataType": "string",
 					"defaultValue": "alert-info",
-					"label": "Alert Type",
+					"label": "alert-type",
 					"name": "alertType",
 					"type": "select",
 					"typeOptions": {
