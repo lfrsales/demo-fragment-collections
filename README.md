@@ -33,7 +33,7 @@ Since these fragments are packaged as a Contributed Fragment Collection, they wi
 
 ### Features
 
-*In Progress*
+[View Included Fragment Collection Docs](/collections.md)
 
 ## Contributors
 
