@@ -1,3 +1,4 @@
 {
+	"description": "A collection of fragments that can be used to build a page header.",
 	"name": "header-components"
 }

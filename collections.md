@@ -1,186 +1,198 @@
-<h3>header-components</h3>
+<h2>Header Components</h2>
 
-<h4>language-selector</h4>
+A collection of fragments that can be used to build a page header.
 
-![Image of language-selector](./modules/header-components-fragment-collection-contributor/src/main/resources/META-INF/resources/thumbnails/language-selector.png)
+<h3>Language Selector</h3>
 
-<h4>user-personal-bar</h4>
+![Image of Language Selector](./modules/header-components-fragment-collection-contributor/src/main/resources/META-INF/resources/thumbnails/language-selector.png)
 
-![Image of user-personal-bar](./modules/header-components-fragment-collection-contributor/src/main/resources/META-INF/resources/thumbnails/user-personal-bar.png)
+<h3>User Personal Bar</h3>
 
-<h4>site-name</h4>
+![Image of User Personal Bar](./modules/header-components-fragment-collection-contributor/src/main/resources/META-INF/resources/thumbnails/user-personal-bar.png)
 
-![Image of site-name](./modules/header-components-fragment-collection-contributor/src/main/resources/META-INF/resources/thumbnails/site-name.png)
+<h3>Site Name</h3>
 
-Configuration | type | Default Value
-------------- | ---- | -------------
-heading-level | select | h2
+![Image of Site Name](./modules/header-components-fragment-collection-contributor/src/main/resources/META-INF/resources/thumbnails/site-name.png)
 
-<h4>search</h4>
+Configuration | Type | Default Value
+------------- | ---- | ---------------
+Heading Level | select | h2
 
-![Image of search](./modules/header-components-fragment-collection-contributor/src/main/resources/META-INF/resources/thumbnails/search.png)
+<h3>Search</h3>
 
-<h3>ff-content-display</h3>
+![Image of Search](./modules/header-components-fragment-collection-contributor/src/main/resources/META-INF/resources/thumbnails/search.png)
 
-<h4>map-view</h4>
+<h2>FF Content Display</h2>
 
-![Image of map-view](./modules/formed-content-display-fragment-collection-contributor/src/main/resources/META-INF/resources/thumbnails/map-view.png)
+A collection of fragments designed to be used within a collection fragment or on a display page.
 
-<h3>utilities</h3>
+<h3>Map View</h3>
 
-<h4>constrained-image</h4>
+![Image of Map View](./modules/formed-content-display-fragment-collection-contributor/src/main/resources/META-INF/resources/thumbnails/map-view.png)
 
-![Image of constrained-image](./modules/utilities-fragment-collection-contributor/src/main/resources/META-INF/resources/thumbnails/constrained-image.png)
+<h2>Utilities</h2>
 
-Configuration | type | Default Value
-------------- | ---- | -------------
-aspect-ratio-height | text | 3
-aspect-ratio-width | text | 4
+A collection of utility fragments that can be used to help create pages.
 
-<h4>flex-container</h4>
+<h3>Constrained Image</h3>
 
-![Image of flex-container](./modules/utilities-fragment-collection-contributor/src/main/resources/META-INF/resources/thumbnails/flex-container.png)
+![Image of Constrained Image](./modules/utilities-fragment-collection-contributor/src/main/resources/META-INF/resources/thumbnails/constrained-image.png)
 
-Configuration | type | Default Value
-------------- | ---- | -------------
-items | text | 3
-flex-direction | select | 
-align-items | select | align-items-start
-justify-content | select | justify-content-start
-flex-wrap | select | 
+Configuration | Type | Default Value
+------------- | ---- | ---------------
+Aspect Ratio Height | text | 3
+Aspect Ratio Width | text | 4
 
-<h4>fragment-context-display</h4>
+<h3>Flex Container</h3>
 
-![Image of fragment-context-display](./modules/utilities-fragment-collection-contributor/src/main/resources/META-INF/resources/thumbnails/fragment-context-display.png)
+![Image of Flex Container](./modules/utilities-fragment-collection-contributor/src/main/resources/META-INF/resources/thumbnails/flex-container.png)
 
-<h3>integrations</h3>
+Configuration | Type | Default Value
+------------- | ---- | ---------------
+Items | text | 3
+Flex Direction | select | 
+Align Items | select | align-items-start
+Justify Content | select | justify-content-start
+Flex Wrap | select | 
 
-<h4>google-hangout</h4>
+<h3>Fragment Context Display</h3>
 
-![Image of google-hangout](./modules/integrations-fragment-collection-contributor/src/main/resources/META-INF/resources/thumbnails/google-hangout.png)
+![Image of Fragment Context Display](./modules/utilities-fragment-collection-contributor/src/main/resources/META-INF/resources/thumbnails/fragment-context-display.png)
 
-<h4>twitter</h4>
+<h2>Integrations</h2>
 
-![Image of twitter](./modules/integrations-fragment-collection-contributor/src/main/resources/META-INF/resources/thumbnails/twitter.png)
+A collection of fragments that showcase the ease with which you can integrate other systems with Liferay.
 
-Configuration | type | Default Value
-------------- | ---- | -------------
-tweet-text | text | Let me tell you why I love @Liferay ...
-icon-size | select | 4
+<h3>Google Hangout</h3>
 
-<h4>tableau</h4>
+![Image of Google Hangout](./modules/integrations-fragment-collection-contributor/src/main/resources/META-INF/resources/thumbnails/google-hangout.png)
 
-![Image of tableau](./modules/integrations-fragment-collection-contributor/src/main/resources/META-INF/resources/thumbnails/tableau.png)
+<h3>Twitter</h3>
 
-<h4>hubspot-chatbot</h4>
+![Image of Twitter](./modules/integrations-fragment-collection-contributor/src/main/resources/META-INF/resources/thumbnails/twitter.png)
 
-![Image of hubspot-chatbot](./modules/integrations-fragment-collection-contributor/src/main/resources/META-INF/resources/thumbnails/hubspot-chatbot.png)
+Configuration | Type | Default Value
+------------- | ---- | ---------------
+Tweet Text | text | Let me tell you why I love @Liferay ...
+Icon Size | select | 4
 
-Configuration | type | Default Value
-------------- | ---- | -------------
-tracking-code | text | 8842647
+<h3>Tableau</h3>
 
-<h4>twitter-timeline</h4>
+![Image of Tableau](./modules/integrations-fragment-collection-contributor/src/main/resources/META-INF/resources/thumbnails/tableau.png)
 
-![Image of twitter-timeline](./modules/integrations-fragment-collection-contributor/src/main/resources/META-INF/resources/thumbnails/twitter-timeline.png)
+<h3>Hubspot Chatbot</h3>
 
-Configuration | type | Default Value
-------------- | ---- | -------------
-twitter-handle | text | @Liferay
-number-of-tweets-to-display | text | 3
+![Image of Hubspot Chatbot](./modules/integrations-fragment-collection-contributor/src/main/resources/META-INF/resources/thumbnails/hubspot-chatbot.png)
 
-<h3>ff-components</h3>
+Configuration | Type | Default Value
+------------- | ---- | ---------------
+Tracking Code | text | 8842647
 
-<h4>clay-alert</h4>
+<h3>Twitter Timeline</h3>
 
-![Image of clay-alert](./modules/formed-components-fragment-collection-contributor/src/main/resources/META-INF/resources/thumbnails/clay-alert.png)
+![Image of Twitter Timeline](./modules/integrations-fragment-collection-contributor/src/main/resources/META-INF/resources/thumbnails/twitter-timeline.png)
 
-Configuration | type | Default Value
-------------- | ---- | -------------
+Configuration | Type | Default Value
+------------- | ---- | ---------------
+Twitter Handle | text | @Liferay
+Number of Tweets to Display | text | 3
+
+<h2>FF Components</h2>
+
+A collection of fragments that can be used to composed pages mostly based off of Liferay's Clay web component framework.
+
+<h3>Clay Alert</h3>
+
+![Image of Clay Alert](./modules/formed-components-fragment-collection-contributor/src/main/resources/META-INF/resources/thumbnails/clay-alert.png)
+
+Configuration | Type | Default Value
+------------- | ---- | ---------------
 Alert Type | select | alert-info
-display-as-stripe | checkbox | False
-dismissable | checkbox | True
-hide-alert-automatically | checkbox | True
-hide-delay-ms | text | 5000
+Display as Stripe | checkbox | False
+Dismissable | checkbox | True
+Hide Alert automatically | checkbox | True
+Hide Delay (ms) | text | 5000
 
-<h4>background-video-container</h4>
+<h3>Background Video Container</h3>
 
-![Image of background-video-container](./modules/formed-components-fragment-collection-contributor/src/main/resources/META-INF/resources/thumbnails/background-video-container.png)
+![Image of Background Video Container](./modules/formed-components-fragment-collection-contributor/src/main/resources/META-INF/resources/thumbnails/background-video-container.png)
 
-Configuration | type | Default Value
-------------- | ---- | -------------
-video-url | text | https://storage.googleapis.com/coverr-main/mp4/Mt_Baker.mp4
-mobile-fallback-image | text | https://source.unsplash.com/XT5OInaElMw/1600x900
-video-height | text | 75vh
-video-min-height | text | 25rem
-overlay-color | text | #000
-overlay-opacity | text | 0.5
+Configuration | Type | Default Value
+------------- | ---- | ---------------
+Video URL | text | https://storage.googleapis.com/coverr-main/mp4/Mt_Baker.mp4
+Mobile Fallback Image | text | https://source.unsplash.com/XT5OInaElMw/1600x900
+Video Height | text | 75vh
+Video Min Height | text | 25rem
+Overlay Color | text | #000
+Overlay Opacity | text | 0.5
 
-<h4>display-heading</h4>
+<h3>Display Heading</h3>
 
-![Image of display-heading](./modules/formed-components-fragment-collection-contributor/src/main/resources/META-INF/resources/thumbnails/display-heading.png)
+![Image of Display Heading](./modules/formed-components-fragment-collection-contributor/src/main/resources/META-INF/resources/thumbnails/display-heading.png)
 
-Configuration | type | Default Value
-------------- | ---- | -------------
-heading-level | select | display-2
+Configuration | Type | Default Value
+------------- | ---- | ---------------
+Heading Level | select | display-2
 
-<h4>background-gradient-container</h4>
+<h3>Background Gradient Container</h3>
 
-![Image of background-gradient-container](./modules/formed-components-fragment-collection-contributor/src/main/resources/META-INF/resources/thumbnails/background-gradient-container.png)
+![Image of Background Gradient Container](./modules/formed-components-fragment-collection-contributor/src/main/resources/META-INF/resources/thumbnails/background-gradient-container.png)
 
-Configuration | type | Default Value
-------------- | ---- | -------------
-starting-color | text | #ee0979
-finishing-color | text | #ff6a00
-angle | text | 90deg
+Configuration | Type | Default Value
+------------- | ---- | ---------------
+Starting Color | text | #ee0979
+Finishing Color | text | #ff6a00
+Angle | text | 90deg
 
-<h4>parallax-container</h4>
+<h3>Parallax Container</h3>
 
-![Image of parallax-container](./modules/formed-components-fragment-collection-contributor/src/main/resources/META-INF/resources/thumbnails/parallax-container.png)
+![Image of Parallax Container](./modules/formed-components-fragment-collection-contributor/src/main/resources/META-INF/resources/thumbnails/parallax-container.png)
 
-<h3>billboard-charts</h3>
+<h2>Billboard Charts</h2>
 
-<h4>bar-chart</h4>
+A collection of fragments build using Billboard Charts that can be used to demonstrate dashboard capabilities.
 
-![Image of bar-chart](./modules/billboard-fragment-collection-contributor/src/main/resources/META-INF/resources/thumbnails/bar-chart.png)
+<h3>Bar Chart</h3>
 
-Configuration | type | Default Value
-------------- | ---- | -------------
+![Image of Bar Chart](./modules/billboard-fragment-collection-contributor/src/main/resources/META-INF/resources/thumbnails/bar-chart.png)
+
+Configuration | Type | Default Value
+------------- | ---- | ---------------
 Data | text | [["data1", 100, 20, 30], ["data2", 20, 70, 100]]
 
-<h4>radar-chart</h4>
+<h3>Radar Chart</h3>
 
-![Image of radar-chart](./modules/billboard-fragment-collection-contributor/src/main/resources/META-INF/resources/thumbnails/radar-chart.png)
+![Image of Radar Chart](./modules/billboard-fragment-collection-contributor/src/main/resources/META-INF/resources/thumbnails/radar-chart.png)
 
-Configuration | type | Default Value
-------------- | ---- | -------------
+Configuration | Type | Default Value
+------------- | ---- | ---------------
 Axis Max | text | 400
 Level Depth | text | 4
 Clockwise | checkbox | True
 Data | text | [["x", "Data A", "Data B", "Data C", "Data D", "Data E"],["data1", 330, 350, 200, 380, 150],["data2", 130, 100, 30, 200, 80],["data3", 230, 153, 85, 300, 250]]
 
-<h4>area-chart</h4>
+<h3>Area Chart</h3>
 
-![Image of area-chart](./modules/billboard-fragment-collection-contributor/src/main/resources/META-INF/resources/thumbnails/area-chart.png)
+![Image of Area Chart](./modules/billboard-fragment-collection-contributor/src/main/resources/META-INF/resources/thumbnails/area-chart.png)
 
-Configuration | type | Default Value
-------------- | ---- | -------------
+Configuration | Type | Default Value
+------------- | ---- | ---------------
 Data | text | [["data1", 300, 350, 300, 0, 0, 0],["data2", 130, 100, 140, 200, 150, 50]]
 
-<h4>line-chart</h4>
+<h3>Line Chart</h3>
 
-![Image of line-chart](./modules/billboard-fragment-collection-contributor/src/main/resources/META-INF/resources/thumbnails/line-chart.png)
+![Image of Line Chart](./modules/billboard-fragment-collection-contributor/src/main/resources/META-INF/resources/thumbnails/line-chart.png)
 
-Configuration | type | Default Value
-------------- | ---- | -------------
+Configuration | Type | Default Value
+------------- | ---- | ---------------
 Data | text | [["data1", 30, 200, 100, 400, 150, 250], ["data2", 50, 20, 10, 40, 15, 25]]
 
-<h4>donut-chart</h4>
+<h3>Donut Chart</h3>
 
-![Image of donut-chart](./modules/billboard-fragment-collection-contributor/src/main/resources/META-INF/resources/thumbnails/donut-chart.png)
+![Image of Donut Chart](./modules/billboard-fragment-collection-contributor/src/main/resources/META-INF/resources/thumbnails/donut-chart.png)
 
-Configuration | type | Default Value
-------------- | ---- | -------------
+Configuration | Type | Default Value
+------------- | ---- | ---------------
 Title | text | Donut Chart Title
 Data | text | [["data1", 30],["data2", 120],["data3", 75]]
 
