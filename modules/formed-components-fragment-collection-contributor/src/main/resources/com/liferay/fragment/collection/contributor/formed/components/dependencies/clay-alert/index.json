@@ -1,0 +1,60 @@
+{
+	"fieldSets": [
+		{
+			"fields": [
+				{
+					"dataType": "string",
+					"defaultValue": "alert-info",
+					"label": "Alert Type",
+					"name": "alertType",
+					"type": "select",
+					"typeOptions": {
+						"validValues": [
+							{
+								"label": "danger",
+								"value": "alert-danger"
+							},
+							{
+								"label": "success",
+								"value": "alert-success"
+							},
+							{
+								"label": "warning",
+								"value": "alert-warning"
+							},
+							{
+								"label": "info",
+								"value": "alert-info"
+							}
+						]
+					}
+				},
+				{
+					"defaultValue": false,
+					"label": "display-as-stripe",
+					"name": "isStripe",
+					"type": "checkbox"
+				},
+				{
+					"defaultValue": true,
+					"label": "dismissable",
+					"name": "isDismissable",
+					"type": "checkbox"
+				},
+				{
+					"defaultValue": true,
+					"label": "hide-alert-automatically",
+					"name": "autoHide",
+					"type": "checkbox"
+				},
+				{
+					"dataType": "string",
+					"defaultValue": "5000",
+					"label": "hide-delay-ms",
+					"name": "hideDelay",
+					"type": "text"
+				}
+			]
+		}
+	]
+}

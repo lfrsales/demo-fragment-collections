@@ -1,0 +1,11 @@
+.parallax {
+	background-attachment: fixed;
+	background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAJCAYAAAA7KqwyAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAkSURBVHgB7cxBEQAACAIwtH8Pzw52kxD8OBZgNXsPQUOUwCIgAz0DHTyygaAAAAAASUVORK5CYII=");
+	background-position: center;
+	background-size: cover;
+	text-align: center !important;
+}
+
+.parallax .page-editor__no-fragments-message {
+	background: #F0F5FF99;
+}

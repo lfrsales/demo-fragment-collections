@@ -1,0 +1,29 @@
+{
+	"fieldSets": [
+		{
+			"fields": [
+				{
+					"dataType": "string",
+					"defaultValue": "#ee0979",
+					"label": "starting-color",
+					"name": "startingColor",
+					"type": "text"
+				},
+				{
+					"dataType": "string",
+					"defaultValue": "#ff6a00",
+					"label": "finishing-color",
+					"name": "finishingColor",
+					"type": "text"
+				},
+				{
+					"dataType": "string",
+					"defaultValue": "90deg",
+					"label": "angle",
+					"name": "angle",
+					"type": "text"
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,36 @@
+[#assign iconHash = {
+	"alert-error": "exclamation-full",
+	"alert-info": "info-circle",
+	"alert-success": "check-circle-full",
+	"alert-warning": "warning-full"
+}]
+
+[#assign alertType = configuration.alertType!"alert-info" /]
+
+<div class="alert [#if configuration.isDismissable]alert-dismissible[/#if] [#if configuration.isStripe]alert-fluid[/#if] ${alertType}" role="alert">
+	<div class="container">
+		<div class="alert-autofit-row autofit-row">
+			<div class="autofit-col">
+				<div class="autofit-section">
+					<span class="alert-indicator">
+						[@clay["icon"] symbol="${iconHash[alertType]}" /]
+					</span>
+				</div>
+			</div>
+
+			<div class="autofit-col autofit-col-expand">
+				<div class="autofit-section">
+					<strong class="lead" data-lfr-editable-id="label-text" data-lfr-editable-type="text">Info:</strong>
+
+					<span data-lfr-editable-id="lead-text" data-lfr-editable-type="text">This is an info message.</span>
+				</div>
+			</div>
+
+			[#if configuration.isDismissable]
+				<button aria-label="Close" class="close" onclick="this.closest('.alert').classList.add('hide')" type="button">
+					[@clay["icon"] symbol="times" /]
+				</button>
+			[/#if]
+		</div>
+	</div>
+</div>

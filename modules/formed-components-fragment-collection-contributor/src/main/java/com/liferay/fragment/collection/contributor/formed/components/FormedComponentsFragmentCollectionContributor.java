@@ -43,7 +43,7 @@ public class FormedComponentsFragmentCollectionContributor
 	}
 
 	@Reference(
-		target = "(osgi.web.symbolicname=com.liferay.fragment.collection.contributor.utilities)"
+		target = "(osgi.web.symbolicname=com.liferay.fragment.collection.contributor.formed.components)"
 	)
 	private ServletContext _servletContext;
 

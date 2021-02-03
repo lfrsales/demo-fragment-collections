@@ -1,0 +1,46 @@
+.background-video-container-fragment .page-editor__no-fragments-message {
+	background: #F0F5FF99;
+}
+
+.background-video-container-fragment .page-editor__no-fragments-message__title {
+	color: #3f404a;
+}
+
+.background-video-container-fragment {
+	color: inherit;
+}
+
+.background-video-container-fragment .background-video-container-fragment-container {
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+}
+
+.background-video-container-fragment .background-video-container-fragment-container video {
+	-moz-transform: translateX(-50%) translateY(-50%);
+	-ms-transform: translateX(-50%) translateY(-50%);
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	height: auto;
+	left: 50%;
+	min-height: 100%;
+	min-width: 100%;
+	position: absolute;
+	top: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	width: auto;
+	z-index: 0;
+}
+
+.background-video-container-fragment .background-video-container-fragment-container .container {
+	position: relative;
+	z-index: 2;
+}
+
+.background-video-container-fragment .background-video-container-fragment-container .overlay {
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 1;
+}

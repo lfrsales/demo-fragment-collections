@@ -1,0 +1,56 @@
+{
+	"fieldSets": [
+		{
+			"fields": [
+				{
+					"dataType": "string",
+					"defaultValue": "https://storage.googleapis.com/coverr-main/mp4/Mt_Baker.mp4",
+					"label": "video-url",
+					"name": "videoURL",
+					"type": "text",
+					"typeOptions": {
+						"placeholder": "https://storage.googleapis.com/coverr-main/mp4/Mt_Baker.mp4"
+					}
+				},
+				{
+					"dataType": "string",
+					"defaultValue": "https://source.unsplash.com/XT5OInaElMw/1600x900",
+					"label": "mobile-fallback-image",
+					"name": "mobileFallbackImage",
+					"type": "text",
+					"typeOptions": {
+						"placeholder": "https://source.unsplash.com/XT5OInaElMw/1600x900"
+					}
+				},
+				{
+					"dataType": "string",
+					"defaultValue": "75vh",
+					"label": "video-height",
+					"name": "videoHeight",
+					"type": "text"
+				},
+				{
+					"dataType": "string",
+					"defaultValue": "25rem",
+					"label": "video-min-height",
+					"name": "videoMinHeight",
+					"type": "text"
+				},
+				{
+					"dataType": "string",
+					"defaultValue": "#000",
+					"label": "overlay-color",
+					"name": "overlayColor",
+					"type": "text"
+				},
+				{
+					"dataType": "string",
+					"defaultValue": "0.5",
+					"label": "overlay-opacity",
+					"name": "overlayOpacity",
+					"type": "text"
+				}
+			]
+		}
+	]
+}

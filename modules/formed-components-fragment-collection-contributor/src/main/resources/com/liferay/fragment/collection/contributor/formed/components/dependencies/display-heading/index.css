@@ -1,0 +1,8 @@
+.display-heading a {
+	color: inherit;
+}
+
+.display-heading a:hover {
+	color: inherit;
+	filter: opacity(0.7);
+}
