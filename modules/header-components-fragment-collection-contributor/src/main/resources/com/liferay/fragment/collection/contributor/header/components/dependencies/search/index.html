@@ -1,0 +1,5 @@
+<div class="justify-content-md-end navbar-form search-fragment" role="search">
+	[#assign preferences = freeMarkerPortletPreferences.getPreferences({"portletSetupPortletDecoratorId": "barebone", "destination": "/search"}) /]
+
+	[@liferay.search_bar default_preferences="${preferences}" /]
+</div>

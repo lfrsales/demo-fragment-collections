@@ -1,0 +1,23 @@
+<div class="navigation-fragment-root">
+	[#assign is_setup_complete = user.isSetupComplete() /]
+
+	[#if is_setup_complete]
+		[#assign preferences = freeMarkerPortletPreferences.getPreferences("portletSetupPortletDecoratorId", "barebone") /]
+
+		<button
+			aria-controls="navigationCollapse"
+			aria-expanded="false"
+			aria-label="Toggle navigation"
+			class="btn btn-outline-secondary d-md-none navbar-toggler navbar-toggler-right py-2"
+			data-target="#navigationCollapse"
+			data-toggle="liferay-collapse"
+			type="button"
+		>
+			[@clay["icon"] symbol="bars" /]
+		</button>
+
+		<div aria-expanded="false" class="collapse flex-grow-0 navbar-collapse" id="navigationCollapse">
+			[@liferay["navigation_menu"] default_preferences="${preferences}" /]
+		</div>
+	[/#if]
+</div>

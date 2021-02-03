@@ -1,0 +1,17 @@
+[#if configuration.headingLevel?contains("display")]
+	[#assign heading="h1"]
+	[#assign headingClass=configuration.headingLevel]
+[#else]
+	[#assign heading=configuration.headingLevel]
+	[#assign headingClass=""]
+[/#if]
+
+[#assign siteLogo = htmlUtil.escape(themeDisplay.getCompanyLogo()) /]
+
+[#assign pageGroup = layout.getGroup() /]
+
+[#assign siteName = htmlUtil.escape(pageGroup.getDescriptiveName()) /]
+
+<${heading} class="component-heading display-heading mb-0 ${headingClass}">
+	${siteName}
+</${heading}>

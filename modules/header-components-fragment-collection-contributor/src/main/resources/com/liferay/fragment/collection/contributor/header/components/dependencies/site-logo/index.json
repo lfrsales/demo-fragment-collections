@@ -1,0 +1,29 @@
+{
+	"fieldSets": [
+		{
+			"fields": [
+				{
+					"dataType": "string",
+					"defaultValue": "site-logo",
+					"label": "image-alternate-text",
+					"name": "alt",
+					"type": "text"
+				},
+				{
+					"dataType": "string",
+					"defaultValue": "56px",
+					"label": "image-height",
+					"name": "height",
+					"type": "text"
+				},
+				{
+					"dataType": "string",
+					"defaultValue": "56px",
+					"label": "image-width",
+					"name": "width",
+					"type": "text"
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,47 @@
+{
+	"fieldSets": [
+		{
+			"fields": [
+				{
+					"dataType": "string",
+					"defaultValue": "h2",
+					"label": "heading-level",
+					"name": "headingLevel",
+					"type": "select",
+					"typeOptions": {
+						"validValues": [
+							{
+								"value": "h1"
+							},
+							{
+								"value": "h2"
+							},
+							{
+								"value": "h3"
+							},
+							{
+								"value": "h4"
+							},
+							{
+								"label": "display-1",
+								"value": "display-1"
+							},
+							{
+								"label": "display-2",
+								"value": "display-2"
+							},
+							{
+								"label": "display-3",
+								"value": "display-3"
+							},
+							{
+								"label": "display-4",
+								"value": "display-4"
+							}
+						]
+					}
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,15 @@
+.navigation-fragment-root .nav-link {
+	color: inherit;
+}
+
+.navigation-fragment-root .nav-link:hover {
+	color: inherit;
+}
+
+.navigation-fragment-root .portlet {
+	margin-bottom: 0;
+}
+
+.navigation-fragment-root .nav-item.active .nav-link {
+	font-weight: bold;
+}

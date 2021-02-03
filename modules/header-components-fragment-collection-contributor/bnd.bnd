@@ -1,0 +1,5 @@
+Bundle-Name: header-components-fragment-collection-contributor
+Bundle-SymbolicName: com.liferay.fragment.collection.contributor.header.components
+Bundle-Version: 1.0.0
+Web-ContextPath: /header-components-fragment-collection-contributor
+-dsannotations-options: inherit
