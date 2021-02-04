@@ -38,7 +38,7 @@
 				},
 				{
 					"dataType": "string",
-					"defaultValue": "align-items-start",
+					"defaultValue": "align-items-center",
 					"label": "align-items",
 					"name": "alignItems",
 					"type": "select",
@@ -69,7 +69,7 @@
 				},
 				{
 					"dataType": "string",
-					"defaultValue": "justify-content-start",
+					"defaultValue": "justify-content-between",
 					"label": "justify-content",
 					"name": "justifyContent",
 					"type": "select",
