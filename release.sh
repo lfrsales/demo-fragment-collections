@@ -7,4 +7,4 @@ hub release create \
 	-a modules/header-components-fragment-collection-contributor/build/libs/com.liferay.fragment.collection.contributor.header.components-1.0.0.jar \
 	-a modules/integrations-fragment-collection-contributor/build/libs/com.liferay.fragment.collection.contributor.integrations-1.0.0.jar \
 	-a modules/utilities-fragment-collection-contributor/build/libs/com.liferay.fragment.collection.contributor.utilities-1.0.0.jar \
-	-m 'v0.0.1' 'v0.0.1'
+	-m 'v0.0.2' 'v0.0.2'
