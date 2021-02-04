@@ -1,4 +1,4 @@
-<h2>Header Components</h2>
+<h2>SE Header Components</h2>
 
 A collection of fragments that can be used to build a page header.
 
@@ -22,7 +22,7 @@ Heading Level | select | h2
 
 ![Image of Search](./modules/header-components-fragment-collection-contributor/src/main/resources/META-INF/resources/thumbnails/search.png)
 
-<h2>FF Content Display</h2>
+<h2>SE Content Display</h2>
 
 A collection of fragments designed to be used within a collection fragment or on a display page.
 
@@ -30,7 +30,7 @@ A collection of fragments designed to be used within a collection fragment or on
 
 ![Image of Map View](./modules/formed-content-display-fragment-collection-contributor/src/main/resources/META-INF/resources/thumbnails/map-view.png)
 
-<h2>Utilities</h2>
+<h2>SE Utilities</h2>
 
 A collection of utility fragments that can be used to help create pages.
 
@@ -51,15 +51,15 @@ Configuration | Type | Default Value
 ------------- | ---- | ---------------
 Items | text | 3
 Flex Direction | select | 
-Align Items | select | align-items-start
-Justify Content | select | justify-content-start
+Align Items | select | align-items-center
+Justify Content | select | justify-content-between
 Flex Wrap | select | 
 
 <h3>Fragment Context Display</h3>
 
 ![Image of Fragment Context Display](./modules/utilities-fragment-collection-contributor/src/main/resources/META-INF/resources/thumbnails/fragment-context-display.png)
 
-<h2>Integrations</h2>
+<h2>SE Integrations</h2>
 
 A collection of fragments that showcase the ease with which you can integrate other systems with Liferay.
 
@@ -97,7 +97,7 @@ Configuration | Type | Default Value
 Twitter Handle | text | @Liferay
 Number of Tweets to Display | text | 3
 
-<h2>FF Components</h2>
+<h2>SE Components</h2>
 
 A collection of fragments that can be used to composed pages mostly based off of Liferay's Clay web component framework.
 
@@ -148,7 +148,7 @@ Angle | text | 90deg
 
 ![Image of Parallax Container](./modules/formed-components-fragment-collection-contributor/src/main/resources/META-INF/resources/thumbnails/parallax-container.png)
 
-<h2>Billboard Charts</h2>
+<h2>SE Billboard Charts</h2>
 
 A collection of fragments build using Billboard Charts that can be used to demonstrate dashboard capabilities.
 
