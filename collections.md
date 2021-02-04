@@ -6,6 +6,16 @@ A collection of fragments that can be used to build a page header.
 
 ![Image of Language Selector](./modules/header-components-fragment-collection-contributor/src/main/resources/META-INF/resources/thumbnails/language-selector.png)
 
+<h3>Site Logo</h3>
+
+![Image of Site Logo](./modules/header-components-fragment-collection-contributor/src/main/resources/META-INF/resources/thumbnails/site-logo.png)
+
+Configuration | Type | Default Value
+------------- | ---- | ---------------
+Image Alternate Text | text | site-logo
+Image Height | text | 56px
+Image Width | text | 56px
+
 <h3>User Personal Bar</h3>
 
 ![Image of User Personal Bar](./modules/header-components-fragment-collection-contributor/src/main/resources/META-INF/resources/thumbnails/user-personal-bar.png)
@@ -18,6 +28,10 @@ Configuration | Type | Default Value
 ------------- | ---- | ---------------
 Heading Level | select | h2
 
+<h3>Navigation</h3>
+
+![Image of Navigation](./modules/header-components-fragment-collection-contributor/src/main/resources/META-INF/resources/thumbnails/navigation.png)
+
 <h3>Search</h3>
 
 ![Image of Search](./modules/header-components-fragment-collection-contributor/src/main/resources/META-INF/resources/thumbnails/search.png)
@@ -29,6 +43,15 @@ A collection of fragments designed to be used within a collection fragment or on
 <h3>Map View</h3>
 
 ![Image of Map View](./modules/formed-content-display-fragment-collection-contributor/src/main/resources/META-INF/resources/thumbnails/map-view.png)
+
+<h3>Categories</h3>
+
+![Image of Categories](./modules/formed-content-display-fragment-collection-contributor/src/main/resources/META-INF/resources/thumbnails/categories.png)
+
+Configuration | Type | Default Value
+------------- | ---- | ---------------
+Ignore Categories - Separate categories by commas to ignore them. | text | category
+Hide if Empty | checkbox | False
 
 <h2>SE Utilities</h2>
 
@@ -88,6 +111,14 @@ Configuration | Type | Default Value
 ------------- | ---- | ---------------
 Tracking Code | text | 8842647
 
+<h3>LinkedIn Share Button</h3>
+
+![Image of LinkedIn Share Button](./modules/integrations-fragment-collection-contributor/src/main/resources/META-INF/resources/thumbnails/linkedin-share-button.png)
+
+Configuration | Type | Default Value
+------------- | ---- | ---------------
+Share URL | text | https://www.liferay.com
+
 <h3>Twitter Timeline</h3>
 
 ![Image of Twitter Timeline](./modules/integrations-fragment-collection-contributor/src/main/resources/META-INF/resources/thumbnails/twitter-timeline.png)
@@ -100,6 +131,15 @@ Number of Tweets to Display | text | 3
 <h2>SE Components</h2>
 
 A collection of fragments that can be used to composed pages mostly based off of Liferay's Clay web component framework.
+
+<h3>Clay Icon</h3>
+
+![Image of Clay Icon](./modules/formed-components-fragment-collection-contributor/src/main/resources/META-INF/resources/thumbnails/clay-icon.png)
+
+Configuration | Type | Default Value
+------------- | ---- | ---------------
+Icon Name | text | check-circle
+Icon Size | select | 32px
 
 <h3>Clay Alert</h3>
 

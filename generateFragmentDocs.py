@@ -32,7 +32,10 @@ for module in glob.glob("./modules/*-fragment-collection-contributor"):
 		if "description" in collectionData:
 			collectionsReadmeFile.write(collectionData["description"] + "\n\n")
 
-	for fragment in glob.glob(module + "/src/main/resources/**/dependencies/*[!.json]", recursive=True):
+	for fragment in glob.glob(module + "/src/main/resources/**/dependencies/*", recursive=True):
+		if (fragment.endswith('collection.json')):
+			continue
+
 		fragmentJSON = open(fragment + "/fragment.json")
 
 		fragmentJSONData = json.load(fragmentJSON)
