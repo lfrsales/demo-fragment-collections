@@ -1,0 +1,41 @@
+{
+    "fieldSets": [
+        {
+            "fields": [
+                {
+                    "name": "reportName",
+                    "label": "report-name",
+                    "description": "It must be something like ",
+                    "type": "text",
+                    "typeOptions": {
+                        "placeholder": "WorldIndicators/GDPpercapita"
+                    },
+                    "dataType": "string",
+                    "defaultValue": "WorldIndicators/GDPpercapita"
+                },
+                {
+                    "name": "hostUrl",
+                    "label": "host-url",
+                    "description": "Use your tableau host url. Don't finish it with '/'.",
+                    "type": "text",
+                    "typeOptions": {
+                        "placeholder": "https://public.tableau.com"
+                    },
+                    "dataType": "string",
+                    "defaultValue": "https://public.tableau.com"
+                },
+                {
+                    "name": "siteRoot",
+                    "label": "site-root",
+                    "description": "Leave this field empty if you use the public Tableau server (public.tableau.com) .",
+                    "type": "text",
+                    "typeOptions": {
+                        "placeholder": "/t/Sales"
+                    },
+                    "dataType": "string",
+                    "defaultValue": ""
+                }
+            ]
+        }
+    ]
+}
