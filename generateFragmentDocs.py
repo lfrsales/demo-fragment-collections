@@ -5,8 +5,15 @@ def write_field(file, langDict, field):
 	file.write(langDict[field["label"]])
 	file.write(" | " + field["type"])
 
+	file.write(" | ")
+
 	if "defaultValue" in field:
-		file.write(" | " + str(field["defaultValue"]))
+		file.write(str(field["defaultValue"]))
+
+	file.write(" | ")
+
+	if "description" in field:
+		file.write(str(field["description"]))
 
 collectionsReadmeFile = open("collections.md", "w")
 
@@ -57,8 +64,8 @@ for module in glob.glob("./modules/*-fragment-collection-contributor"):
 			indexJSONData = json.load(indexJSON)
 
 			if "fieldSets" in indexJSONData:
-				collectionsReadmeFile.write("Configuration | Type | Default Value\n")
-				collectionsReadmeFile.write("------------- | ---- | ---------------")
+				collectionsReadmeFile.write("Configuration | Type | Default Value | Description\n")
+				collectionsReadmeFile.write("------------- | ---- | ------------- | -------------")
 
 				for fieldSet in indexJSONData["fieldSets"]:
 					if "fields" in fieldSet:
