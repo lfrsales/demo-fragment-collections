@@ -10,12 +10,3 @@ var scriptElement = document.createElement("script");
 scriptElement.src = configuration.hostUrl + "/javascripts/api/viz_v1.js";
 
 vizElement.parentNode.insertBefore(scriptElement, vizElement);
-
-// Improving the behaviour while editing
-var editing = !!document.getElementsByClassName('fragments-editor').length;
-var editDiv = document.getElementsByClassName('edit')[0];
-if (editing && !!editDiv) {
-    editDiv.classList.remove("invisible");
-} else {
-    editDiv.classList.add("invisible");
-}
