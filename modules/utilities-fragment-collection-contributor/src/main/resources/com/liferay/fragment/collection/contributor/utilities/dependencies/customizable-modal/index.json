@@ -1,0 +1,63 @@
+{
+	"fieldSets": [
+	  	{
+			"fields": [
+				{
+					"dataType": "string",
+					"defaultValue": "3000",
+					"label": "delay-show",
+					"name": "delay",
+					"type": "text",
+					"typeOptions": {
+						"placeholder": "3000"
+					}
+				},
+				{
+					"dataType": "string",
+					"defaultValue": "primary",
+					"label": "footer-button-type",
+					"name": "buttonType",
+					"type": "select",
+					"typeOptions": {
+						"validValues": [
+							{
+								"value": "primary"
+							},
+							{
+								"value": "secondary"
+							},
+							{
+								"value": "link"
+							},
+							{
+								"value": "outline-primary"
+							},
+							{
+								"value": "outline-secondary"
+							}
+						]
+					}
+				},
+				{
+					"dataType": "string",
+					"defaultValue": "",
+					"label": "modal-alignment",
+					"name": "modalVerticalAlignment",
+					"type": "select",
+					"typeOptions": {
+						"validValues": [
+							{
+								"value": "",
+								"label": "top"
+							},
+							{
+								"value": "modal-dialog-centered",
+								"label": "centered"
+							}
+						]	
+					}
+				}
+			]
+	  	}
+	]
+}
