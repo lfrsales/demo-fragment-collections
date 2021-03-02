@@ -1,6 +1,6 @@
 {
 	"fieldSets": [
-	  	{
+		{
 			"fields": [
 				{
 					"dataType": "string",
@@ -47,17 +47,17 @@
 					"typeOptions": {
 						"validValues": [
 							{
-								"value": "",
-								"label": "top"
+								"label": "top",
+								"value": ""
 							},
 							{
-								"value": "modal-dialog-centered",
-								"label": "centered"
+								"label": "centered",
+								"value": "modal-dialog-centered"
 							}
-						]	
+						]
 					}
 				}
 			]
-	  	}
+		}
 	]
 }
