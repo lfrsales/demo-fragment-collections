@@ -82,6 +82,16 @@ Flex Wrap | select |  |
 
 ![Image of Fragment Context Display](./modules/utilities-fragment-collection-contributor/src/main/resources/META-INF/resources/thumbnails/fragment-context-display.png)
 
+<h3>Modal</h3>
+
+![Image of Modal](./modules/utilities-fragment-collection-contributor/src/main/resources/META-INF/resources/thumbnails/modal.png)
+
+Configuration | Type | Default Value | Description
+------------- | ---- | ------------- | -------------
+Delay in ms to Show Modal | text | 3000 | 
+Footer Button Type | select | primary | 
+Modal Vertical Alignment | select |  | 
+
 <h2>SE Integrations</h2>
 
 A collection of fragments that showcase the ease with which you can integrate other systems with Liferay.
