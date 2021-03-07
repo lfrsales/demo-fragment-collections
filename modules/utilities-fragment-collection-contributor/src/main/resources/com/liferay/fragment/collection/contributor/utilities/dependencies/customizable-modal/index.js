@@ -1,5 +1,7 @@
 const editMode = document.body.classList.contains('has-edit-mode-menu');
-const offerModal = fragmentElement.querySelector('#offerModal');
+
+const offerModal = fragmentElement.querySelector('.modal-root');
+
 const backdrop = document.createElement('div');
 
 const delay = configuration.delay;
