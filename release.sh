@@ -7,6 +7,6 @@ hub release create \
 	--attach modules/header-components-fragment-collection-contributor/build/libs/com.liferay.fragment.collection.contributor.header.components-1.0.0.jar \
 	--attach modules/integrations-fragment-collection-contributor/build/libs/com.liferay.fragment.collection.contributor.integrations-1.0.0.jar \
 	--attach modules/utilities-fragment-collection-contributor/build/libs/com.liferay.fragment.collection.contributor.utilities-1.0.0.jar \
-	--message 'v0.0.3' \
-	--message 'Include updates to Tableau fragment.' \
-	'v0.0.3'
+	--message 'v0.0.4' \
+	--message 'Add modal fragment.' \
+	'v0.0.4'
