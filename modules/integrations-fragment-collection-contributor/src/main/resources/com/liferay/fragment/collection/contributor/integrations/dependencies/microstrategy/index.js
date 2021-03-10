@@ -1,19 +1,15 @@
-//BEGIN CONFIG PARAMETERS -------------------------------------------------------------------------
 const baseRestURL = configuration.hostUrl;
-const projectID = configuration.projectId;
-const dossierID = configuration.dossierId;
+const projectId = configuration.projectId;
+const dossierId = configuration.dossierId;
 const containerHeight = configuration.containerHeight;
-//END CONFIG PARAMETERS -------------------------------------------------------------------------
 
-var projectUrl = baseRestURL + '/app/' + projectID;
-var dossierUrl = projectUrl + '/' + dossierID;
+const projectUrl = baseRestURL + '/app/' + projectId;
 
-//populate div with Dossier:
+const dossierUrl = projectUrl + '/' + dossierId;
+
 microstrategy.dossier.create({
-	placeholder: document.getElementById("dossierContainer"),
-	url: dossierUrl,
+	containerHeight: containerHeight,
 	enableResponsive: true,
-	containerHeight: containerHeight
-}).then(function(dossier) {
-	//Do something after the code
+	placeholder: document.getElementById("dossierContainer"),
+	url: dossierUrl
 });

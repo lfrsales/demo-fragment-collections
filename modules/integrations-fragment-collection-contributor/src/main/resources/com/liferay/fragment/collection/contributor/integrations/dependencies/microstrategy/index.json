@@ -3,44 +3,44 @@
         {
             "fields": [
                 {
-                    "name": "projectId",
-                    "label": "project-id",
-                    "type": "text",
-                    "typeOptions": {
-                        "placeholder": "Placeholder"
-                    },
                     "dataType": "string",
-                    "defaultValue": "EC70648611E7A2F962E90080EFD58751"
-                },
-                {
-                    "name": "dossierId",
-                    "label": "dossier-id",
-                    "type": "text",
-                    "typeOptions": {
-                        "placeholder": "Placeholder"
-                    },
-                    "dataType": "string",
-                    "defaultValue": "2D62BA5011EB332C52D30080EFB56354/K53--K46"
-                },
-                {
-                    "name": "hostUrl",
-                    "label": "host-url",
-                    "type": "text",
-                    "typeOptions": {
-                        "placeholder": "Placeholder"
-                    },
-                    "dataType": "string",
-                    "defaultValue": "https://demo.microstrategy.com/MicroStrategyLibrary"
-                },
-                {
-                    "name": "containerHeight",
+                    "defaultValue": "1000px",
                     "label": "container-height",
+                    "name": "containerHeight",
                     "type": "text",
                     "typeOptions": {
                         "placeholder": "1000px"
-                    },
+                    }
+                },
+                {
                     "dataType": "string",
-                    "defaultValue": "1000px"
+                    "defaultValue": "2D62BA5011EB332C52D30080EFB56354/K53--K46",
+                    "label": "dossier-id",
+                    "name": "dossierId",
+                    "type": "text",
+                    "typeOptions": {
+                        "placeholder": "Placeholder"
+                    }
+                },
+                {
+                    "dataType": "string",
+                    "defaultValue": "https://demo.microstrategy.com/MicroStrategyLibrary",
+                    "label": "host-url",
+                    "name": "hostUrl",
+                    "type": "text",
+                    "typeOptions": {
+                        "placeholder": "Placeholder"
+                    }
+                },
+                {
+                    "dataType": "string",
+                    "defaultValue": "EC70648611E7A2F962E90080EFD58751",
+                    "label": "project-id",
+                    "name": "projectId",
+                    "type": "text",
+                    "typeOptions": {
+                        "placeholder": "Placeholder"
+                    }
                 }
             ]
         }
