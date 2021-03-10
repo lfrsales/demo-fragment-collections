@@ -241,10 +241,10 @@ Site Root (empty if you are using public.tableau.com) | text |  | Leave this fie
 
 Configuration | Type | Default Value | Description
 ------------- | ---- | ------------- | -------------
-Project ID | text | EC70648611E7A2F962E90080EFD58751 | 
+Container Height | text | 1000px | 
 Dossier ID | text | 2D62BA5011EB332C52D30080EFB56354/K53--K46 | 
 Host URL | text | https://demo.microstrategy.com/MicroStrategyLibrary | 
-Container Height | text | 1000px | 
+Project ID | text | EC70648611E7A2F962E90080EFD58751 | 
 
 <h3>Twitter</h3>
 
