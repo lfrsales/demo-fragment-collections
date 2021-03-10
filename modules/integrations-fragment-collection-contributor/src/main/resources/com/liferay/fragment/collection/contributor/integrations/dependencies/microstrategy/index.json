@@ -4,8 +4,7 @@
             "fields": [
                 {
                     "name": "projectId",
-                    "label": "Project ID",
-                    "description": "Project ID",
+                    "label": "project-id",
                     "type": "text",
                     "typeOptions": {
                         "placeholder": "Placeholder"
@@ -15,8 +14,7 @@
                 },
                 {
                     "name": "dossierId",
-                    "label": "Dossier ID",
-                    "description": "Dossier ID",
+                    "label": "dossier-id",
                     "type": "text",
                     "typeOptions": {
                         "placeholder": "Placeholder"
@@ -26,8 +24,7 @@
                 },
                 {
                     "name": "hostUrl",
-                    "label": "Host Url",
-                    "description": "Host URL",
+                    "label": "host-url",
                     "type": "text",
                     "typeOptions": {
                         "placeholder": "Placeholder"
@@ -37,8 +34,7 @@
                 },
                 {
                     "name": "containerHeight",
-                    "label": "Container Height",
-                    "description": "Container Height (XXXpx)",
+                    "label": "container-height",
                     "type": "text",
                     "typeOptions": {
                         "placeholder": "1000px"
