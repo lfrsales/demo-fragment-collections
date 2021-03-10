@@ -1,0 +1,52 @@
+{
+    "fieldSets": [
+        {
+            "fields": [
+                {
+                    "name": "projectId",
+                    "label": "Project ID",
+                    "description": "Project ID",
+                    "type": "text",
+                    "typeOptions": {
+                        "placeholder": "Placeholder"
+                    },
+                    "dataType": "string",
+                    "defaultValue": "EC70648611E7A2F962E90080EFD58751"
+                },
+                {
+                    "name": "dossierId",
+                    "label": "Dossier ID",
+                    "description": "Dossier ID",
+                    "type": "text",
+                    "typeOptions": {
+                        "placeholder": "Placeholder"
+                    },
+                    "dataType": "string",
+                    "defaultValue": "2D62BA5011EB332C52D30080EFB56354/K53--K46"
+                },
+                {
+                    "name": "hostUrl",
+                    "label": "Host Url",
+                    "description": "Host URL",
+                    "type": "text",
+                    "typeOptions": {
+                        "placeholder": "Placeholder"
+                    },
+                    "dataType": "string",
+                    "defaultValue": "https://demo.microstrategy.com/MicroStrategyLibrary"
+                },
+                {
+                    "name": "containerHeight",
+                    "label": "Container Height",
+                    "description": "Container Height (XXXpx)",
+                    "type": "text",
+                    "typeOptions": {
+                        "placeholder": "1000px"
+                    },
+                    "dataType": "string",
+                    "defaultValue": "1000px"
+                }
+            ]
+        }
+    ]
+}
