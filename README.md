@@ -2,7 +2,7 @@
 
 Multiple collections of fragments for use in demos or as examples what is possible with [Liferay Page Fragments](https://learn.liferay.com/dxp/7.x/en/site-building/developer-guide/developing_page_fragments.html).
 
-Developed to run on the following versions of Liferay and/or Commerce: `Liferay DXP 7.3`, `Commerce 2.1.1`, `etc`
+Developed to run on the following versions of Liferay and/or Commerce: `Liferay DXP 7.3 GA1, FP1, SP1`, `Commerce 2.1.1`, `etc`
 
 Built with [Liferay Workspace](https://help.liferay.com/hc/en-us/articles/360029147471-Liferay-Workspace) and [Blade CLI](https://help.liferay.com/hc/en-us/articles/360029147071-Blade-CLI). This workspace contains the following module types: [Contributed Fragment Collection](https://learn.liferay.com/dxp/7.x/en/site-building/developer-guide/developing-page-fragments/creating-a-contributed-fragment-collection.html), [Theme Contributor](https://help.liferay.com/hc/en-us/articles/360029146831-Theme-Contributor-Template)
 
