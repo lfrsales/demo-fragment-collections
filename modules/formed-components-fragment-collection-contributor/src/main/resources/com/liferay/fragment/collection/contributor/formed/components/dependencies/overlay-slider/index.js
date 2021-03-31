@@ -3,10 +3,11 @@ const MOVE_RIGHT = 'move-right';
 const INTERVAL = 5000;
 
 const editMode = document.body.classList.contains('has-edit-mode-menu');
-const indicators = [].slice.call(
+
+const indicators = Array.from(
 	fragmentElement.querySelectorAll('.carousel-navigation button')
 );
-const items = [].slice.call(fragmentElement.querySelectorAll('.carousel-item'));
+const items = Array.from(fragmentElement.querySelectorAll('.carousel-item'));
 
 let moving = false;
 
