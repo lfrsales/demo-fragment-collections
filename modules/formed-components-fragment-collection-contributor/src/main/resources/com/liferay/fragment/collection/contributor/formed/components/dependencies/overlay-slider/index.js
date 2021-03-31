@@ -68,26 +68,30 @@ function createInterval() {
 }
 
 function hexToRgb(hex) {
-  var result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
-  return result ? {
-    r: parseInt(result[1], 16),
-    g: parseInt(result[2], 16),
-    b: parseInt(result[3], 16)
-  } : null;
+	const result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+
+	return result ? {
+		r: parseInt(result[1], 16),
+		g: parseInt(result[2], 16),
+		b: parseInt(result[3], 16)
+	} : null;
 }
 
 function getObjectWithBackgroundImage(rootNode) {
-    const srcChecker = /url\(\s*?['"]?\s*?(\S+?)\s*?["']?\s*?\)/i;
-    return Array.from(
-        Array.from(rootNode.querySelectorAll('*')).reduce((collection,node) => {
-            let prop = window.getComputedStyle(node, null).getPropertyValue('background-image');
-            let match = srcChecker.exec(prop);
-            if (match) {
-                collection.add(node);
-            }
-            return collection;
-        }, new Set())
-    )
+	const srcChecker = /url\(\s*?['"]?\s*?(\S+?)\s*?["']?\s*?\)/i;
+
+	return Array.from(
+		Array.from(rootNode.querySelectorAll('*')).reduce((collection,node) => {
+			let prop = window.getComputedStyle(node, null).getPropertyValue('background-image');
+			let match = srcChecker.exec(prop);
+
+			if (match) {
+				collection.add(node);
+			}
+
+			return collection;
+		}, new Set())
+	)
 }
 
 function setOverlayColor(rootElement,hexColor,opacity) {
@@ -102,22 +106,21 @@ function setOverlayColor(rootElement,hexColor,opacity) {
 }
 
 (function main() {
-
 	if (configuration.showParallax || configuration.showOverlay) {
 		document.querySelectorAll(".carousel-item").forEach(
-			(node) => { 
-				if (configuration.showParallax) node.classList.add("parallax"); 
+			(node) => {
+				if (configuration.showParallax) node.classList.add("parallax");
 				if (configuration.showOverlay) node.classList.add("overlay-active");
-                
+
 				setOverlayColor(
-					node, 
-					Liferay.Util.escape(configuration.overlayColor), 
+					node,
+					Liferay.Util.escape(configuration.overlayColor),
 					Liferay.Util.escape(configuration.opacity)
 				);
 			}
 		)
 	}
-	
+
 	let intervalId = createInterval();
 
 	indicators.forEach(function (indicator, index) {
@@ -136,7 +139,8 @@ function setOverlayColor(rootElement,hexColor,opacity) {
 			}
 
 			clearInterval(intervalId);
+
 			intervalId = createInterval();
 		});
-	});	
+	});
 })();
