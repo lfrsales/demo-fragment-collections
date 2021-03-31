@@ -157,6 +157,18 @@ Configuration | Type | Default Value | Description
 Icon Name | text | check-circle | 
 Icon Size | select | 32px | 
 
+<h3>Overlay Slider</h3>
+
+![Image of Overlay Slider](./modules/formed-components-fragment-collection-contributor/src/main/resources/META-INF/resources/thumbnails/overlay-slider.png)
+
+Configuration | Type | Default Value | Description
+------------- | ---- | ------------- | -------------
+Number of Slides | text | 3 | 
+Show Overlay Effect | checkbox | True | 
+Show Parallax Effect | checkbox | True | 
+Overlay Color (e.g. #000000) | text | #000000 | Valid values are hexadecimal values with 6 characters (e.g. #000000)
+Overlay Opacity (e.g. 0.5) | text | 0.5 | Valid values are float values between 0 and 1 with one decimal (e.g. 0.5)
+
 <h3>Clay Alert</h3>
 
 ![Image of Clay Alert](./modules/formed-components-fragment-collection-contributor/src/main/resources/META-INF/resources/thumbnails/clay-alert.png)
