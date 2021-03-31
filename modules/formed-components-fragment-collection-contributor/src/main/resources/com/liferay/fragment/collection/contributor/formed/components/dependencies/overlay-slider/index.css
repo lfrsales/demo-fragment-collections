@@ -1,0 +1,111 @@
+.overlay-slider .carousel {
+	position: relative;
+}
+
+.overlay-slider .carousel-item {
+	min-height: 150px;
+	opacity: 0;
+}
+
+.overlay-slider .carousel-item.move-right,
+.overlay-slider .carousel-item.move-left {
+	animation-duration: 0.6s;
+	animation-iteration-count: 1;
+	display: block;
+}
+
+.overlay-slider .carousel-item.active,
+.overlay-slider .carousel-item.move-left,
+.overlay-slider .carousel-item.move-right {
+	opacity: 1;
+}
+
+.overlay-slider .carousel-item.active {
+	transform: translateX(0);
+}
+
+.overlay-slider .carousel-item.active.move-left {
+	animation-name: moveLeftActive;
+}
+
+.overlay-slider .carousel-item.move-left {
+	animation-name: moveLeft;
+}
+
+.overlay-slider .carousel-item.active.move-right {
+	animation-name: moveRightActive;
+}
+
+.overlay-slider .carousel-item.move-right {
+	animation-name: moveRight;
+}
+
+.overlay-slider .carousel-navigation {
+	bottom: 10px;
+	display: flex;
+	justify-content: center;
+	left: 0;
+	list-style: none;
+	padding-left: 0;
+	position: absolute;
+	right: 0;
+	z-index: 15;
+}
+
+.overlay-slider .carousel-navigation button {
+	background-color: rgba(255, 255, 255, 0.5);
+	border: 0;
+	border-radius: 50%;
+	flex: 0 1 auto;
+	height: 10px;
+	margin-left: 3px;
+	margin-right: 3px;
+	position: relative;
+	transition: all .5s ease-in-out;
+	width: 10px;
+}
+
+.overlay-slider .carousel-navigation button:focus {
+	outline: 0;
+	text-decoration: none;
+}
+
+.overlay-slider .carousel-navigation button.active {
+	background-color: rgba(255, 255, 255, 1);
+	height: 15px;
+	width: 15px;
+}
+
+/** DYNAMIC CONFIGURATIONS **/
+.overlay-slider {
+	--overlay-color: rgba(0, 0, 0, 0.5);
+}
+
+.overlay-slider .carousel-item.parallax div[style*="background-image"] {
+	background-attachment: fixed;
+}
+
+.overlay-slider .carousel-item.overlay-active div[style*="background-image"] {
+	box-shadow: inset 0 0 0 2000px var(--overlay-color);
+}
+
+/** TRANSITIONS **/
+@keyframes moveLeftActive {
+	from { transform: translateX(0); }
+	to { transform: translateX(100%); }
+}
+
+@keyframes moveLeft {
+	from { transform: translateX(-100%); }
+	to { transform: translateX(0); }
+}
+
+@keyframes moveRightActive {
+	from { transform: translateX(0); }
+	to { transform: translateX(-100%); }
+}
+
+@keyframes moveRight {
+	from { transform: translateX(100%); }
+	to { transform: translateX(0); }
+}

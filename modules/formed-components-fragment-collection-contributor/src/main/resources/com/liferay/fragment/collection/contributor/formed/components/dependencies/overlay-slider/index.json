@@ -1,0 +1,59 @@
+{
+	"fieldSets": [
+		{
+			"fields": [
+				{
+					"dataType": "int",
+					"defaultValue": "3",
+					"label": "number-of-slides",
+					"name": "numberOfSlides",
+					"type": "text",
+					"typeOptions": {
+						"validation": {
+							"min": 1,
+							"type": "number"
+						}
+					}
+				},
+				{
+					"defaultValue": true,
+					"label": "show-overlay",
+					"name": "showOverlay",
+					"type": "checkbox"
+				},
+				{
+					"defaultValue": true,
+					"label": "show-parallax",
+					"name": "showParallax",
+					"type": "checkbox"
+				}
+			],
+			"label": "slider-options"
+		},
+		{
+			"configurationRole": "style",
+			"fields": [
+				{
+					"dataType": "string",
+					"defaultValue": "#000000",
+					"description": "Valid values are hexadecimal values with 6 characters (e.g. #000000)",
+					"label": "slider-overlay-color",
+					"name": "overlayColor",
+					"type": "text",
+					"typeOptions": {
+						"placeholder": "#000000"
+					}
+				},
+				{
+					"dataType": "string",
+					"defaultValue": "0.5",
+					"description": "Valid values are float values between 0 and 1 with one decimal (e.g. 0.5)",
+					"label": "slider-overlay-opacity",
+					"name": "opacity",
+					"type": "text"
+				}
+			],
+			"label": "slider-options"
+		}
+	]
+}
