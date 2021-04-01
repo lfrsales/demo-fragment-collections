@@ -7,6 +7,6 @@ hub release create \
 	--attach modules/header-components-fragment-collection-contributor/build/libs/com.liferay.fragment.collection.contributor.header.components-1.0.0.jar \
 	--attach modules/integrations-fragment-collection-contributor/build/libs/com.liferay.fragment.collection.contributor.integrations-1.0.0.jar \
 	--attach modules/utilities-fragment-collection-contributor/build/libs/com.liferay.fragment.collection.contributor.utilities-1.0.0.jar \
-	--message 'v0.0.5' \
-	--message 'Upgrade dependencies to add support for 7.3 FP1/SP1.' \
-	'v0.0.5'
+	--message 'v0.0.6' \
+	--message 'Add Overlay Banner and Mappable Video Fragments.' \
+	'v0.0.6'
