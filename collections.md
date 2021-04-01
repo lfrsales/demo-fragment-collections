@@ -181,6 +181,22 @@ Dismissable | checkbox | True |
 Hide Alert automatically | checkbox | True | 
 Hide Delay (ms) | text | 5000 | 
 
+<h3>Mappable Video</h3>
+
+![Image of Mappable Video](./modules/formed-components-fragment-collection-contributor/src/main/resources/META-INF/resources/thumbnails/mappable-video.png)
+
+Configuration | Type | Default Value | Description
+------------- | ---- | ------------- | -------------
+Use Mappable URL | checkbox | True | 
+URL (Only use if not mapping the URL) | text |  | 
+Autoplay | checkbox | False | 
+Loop | checkbox | False | 
+Mute | checkbox | True | 
+Hide Controls | checkbox | False | 
+Width | text |  | 
+Height | text |  | 
+Align | select | flex-start | 
+
 <h3>Background Video Container</h3>
 
 ![Image of Background Video Container](./modules/formed-components-fragment-collection-contributor/src/main/resources/META-INF/resources/thumbnails/background-video-container.png)
