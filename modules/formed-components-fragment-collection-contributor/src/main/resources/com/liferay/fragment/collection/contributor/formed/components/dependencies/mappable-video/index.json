@@ -10,8 +10,8 @@
 				},
 				{
 					"defaultValue": "",
-					"label": "mappable-url",
-					"name": "mappableUrl",
+					"label": "non-mapped-url",
+					"name": "url",
 					"type": "text"
 				},
 				{

@@ -39,7 +39,7 @@ const onPause = () => {
 
 const mappableVideoUrlNode = fragmentElement.querySelector('.mappable-url');
 
-if (isEditMode) {
+if (isEditMode && mappableVideoUrlNode) {
 	mappableVideoUrlNode.classList.remove('hide');
 }
 
