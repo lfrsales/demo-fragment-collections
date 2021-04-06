@@ -7,6 +7,6 @@ hub release create \
 	--attach modules/header-components-fragment-collection-contributor/build/libs/com.liferay.fragment.collection.contributor.header.components-1.0.0.jar \
 	--attach modules/integrations-fragment-collection-contributor/build/libs/com.liferay.fragment.collection.contributor.integrations-1.0.0.jar \
 	--attach modules/utilities-fragment-collection-contributor/build/libs/com.liferay.fragment.collection.contributor.utilities-1.0.0.jar \
-	--message 'v0.0.7' \
-	--message 'Fix mappable video when using a non mapped video.' \
-	'v0.0.7'
+	--message 'v0.0.8' \
+	--message 'Cleanup interval for mappable video before navigation.' \
+	'v0.0.8'

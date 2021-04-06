@@ -18,10 +18,17 @@ const mappableVideo = fragmentElement.querySelector('.mappable-video');
 
 let intervalID;
 
+const resetInterval = () => {
+	clearInterval(intervalID);
+
+	intervalID = null;
+}
+
 const onPlay = (getCurrentTime) => {
 	mappableVideo.classList.add('playing');
+
 	if (intervalID) {
-		clearInterval(intervalID);
+		resetInterval();
 	}
 
 	intervalID = setInterval(() => {
@@ -32,10 +39,12 @@ const onPlay = (getCurrentTime) => {
 const onPause = () => {
 	mappableVideo.classList.remove('playing');
 
-	clearInterval(intervalID);
-
-	intervalID = null;
+	resetInterval();
 }
+
+Liferay.once('beforeNavigate', function() {
+	resetInterval();
+});
 
 const mappableVideoUrlNode = fragmentElement.querySelector('.mappable-url');
 
