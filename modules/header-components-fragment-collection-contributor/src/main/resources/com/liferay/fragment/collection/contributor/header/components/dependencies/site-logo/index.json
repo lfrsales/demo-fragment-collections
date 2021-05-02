@@ -13,14 +13,14 @@
 					"dataType": "string",
 					"defaultValue": "56px",
 					"label": "image-height",
-					"name": "height",
+					"name": "imageHeight",
 					"type": "text"
 				},
 				{
 					"dataType": "string",
 					"defaultValue": "56px",
 					"label": "image-width",
-					"name": "width",
+					"name": "imageWidth",
 					"type": "text"
 				}
 			]
