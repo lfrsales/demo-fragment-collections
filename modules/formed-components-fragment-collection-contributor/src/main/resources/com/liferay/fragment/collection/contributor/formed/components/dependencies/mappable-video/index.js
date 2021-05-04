@@ -1,4 +1,5 @@
 const SET_TIME_INTERVAL = 1000;
+const SHOW_RELATED_VIDEOS_FROM_SAME_CHANNEL = 0;
 
 const isEditMode = document.body.classList.contains('has-edit-mode-menu');
 
@@ -226,6 +227,7 @@ const youtubeProvider = {
 					playlist: configuration.loop
 						? parameters.videoId
 						: undefined,
+					rel: SHOW_RELATED_VIDEOS_FROM_SAME_CHANNEL,
 					start: !!initTime ? initTime : !parameters.start ? 0 : parameters.start,
 				},
 				videoId: parameters.videoId,
