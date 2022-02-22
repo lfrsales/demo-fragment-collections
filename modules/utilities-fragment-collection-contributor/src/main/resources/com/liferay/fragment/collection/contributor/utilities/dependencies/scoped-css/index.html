@@ -1,0 +1,11 @@
+[#assign namespace = random.nextInt() /]
+
+<div class="css-container-${namespace}">
+	<style>
+		.css-container-${namespace}:not(.__.___) ${configuration.selector} {
+			${configuration.properties}
+		}
+	</style>
+
+	<lfr-drop-zone></lfr-drop-zone>
+</div>

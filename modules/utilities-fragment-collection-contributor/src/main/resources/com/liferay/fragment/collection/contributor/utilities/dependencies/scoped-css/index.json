@@ -1,0 +1,20 @@
+{
+	"fieldSets": [
+		{
+			"fields": [
+				{
+					"defaultValue": ".btn",
+					"label": "selector",
+					"name": "selector",
+					"type": "text"
+				},
+				{
+					"defaultValue": "background-color: blue;",
+					"label": "properties",
+					"name": "properties",
+					"type": "text"
+				}
+			]
+		}
+	]
+}
