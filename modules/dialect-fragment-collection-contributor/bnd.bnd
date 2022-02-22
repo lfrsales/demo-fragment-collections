@@ -1,0 +1,5 @@
+Bundle-Name: se-dialect-fragment-collection-contributor
+Bundle-SymbolicName: com.liferay.fragment.collection.contributor.se.dialect
+Bundle-Version: 1.0.0
+Web-ContextPath: /se-dialect-fragment-collection-contributor
+-dsannotations-options: inherit
