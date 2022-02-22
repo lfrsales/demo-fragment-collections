@@ -1,0 +1,16 @@
+.dialect-overlay-item-root {
+	position: relative;
+}
+
+.dialect-overlay-item-root .overlay-item-top {
+	position: absolute;
+	z-index: 1;
+}
+
+.dialect-overlay-item-root .overlay-item-top.editing {
+	position: initial;
+}
+
+.dialect-overlay-item-root .page-editor__topper {
+	margin: 0 !important;
+}

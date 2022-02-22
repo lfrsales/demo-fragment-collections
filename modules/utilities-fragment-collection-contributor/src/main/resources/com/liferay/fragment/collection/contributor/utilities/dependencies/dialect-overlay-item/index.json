@@ -1,0 +1,258 @@
+{
+	"fieldSets": [
+		{
+			"fields": [
+				{
+					"dataType": "string",
+					"defaultValue": true,
+					"label": "disable-overlay-in-edit-mode",
+					"name": "disableOverlay",
+					"type": "checkbox"
+				},
+				{
+					"dataType": "string",
+					"defaultValue": false,
+					"label": "center",
+					"name": "center",
+					"type": "checkbox"
+				},
+				{
+					"dataType": "string",
+					"defaultValue": "",
+					"label": "top",
+					"name": "top",
+					"type": "select",
+					"typeOptions": {
+						"validValues": [
+							{
+								"label": "none",
+								"value": ""
+							},
+							{
+								"label": "0",
+								"value": "top: var(--spacer-0);"
+							},
+							{
+								"label": "1",
+								"value": "top: var(--spacer-1);"
+							},
+							{
+								"label": "2",
+								"value": "top: var(--spacer-2);"
+							},
+							{
+								"label": "3",
+								"value": "top: var(--spacer-3);"
+							},
+							{
+								"label": "4",
+								"value": "top: var(--spacer-4);"
+							},
+							{
+								"label": "5",
+								"value": "top: var(--spacer-5);"
+							},
+							{
+								"label": "6",
+								"value": "top: var(--spacer-6);"
+							},
+							{
+								"label": "7",
+								"value": "top: var(--spacer-7);"
+							},
+							{
+								"label": "8",
+								"value": "top: var(--spacer-8);"
+							},
+							{
+								"label": "9",
+								"value": "top: var(--spacer-9);"
+							},
+							{
+								"label": "10",
+								"value": "top: var(--spacer-10);"
+							}
+						]
+					}
+				},
+				{
+					"dataType": "string",
+					"defaultValue": "",
+					"label": "right",
+					"name": "right",
+					"type": "select",
+					"typeOptions": {
+						"validValues": [
+							{
+								"label": "none",
+								"value": ""
+							},
+							{
+								"label": "0",
+								"value": "right: var(--spacer-0);"
+							},
+							{
+								"label": "1",
+								"value": "right: var(--spacer-1);"
+							},
+							{
+								"label": "2",
+								"value": "right: var(--spacer-2);"
+							},
+							{
+								"label": "3",
+								"value": "right: var(--spacer-3);"
+							},
+							{
+								"label": "4",
+								"value": "right: var(--spacer-4);"
+							},
+							{
+								"label": "5",
+								"value": "right: var(--spacer-5);"
+							},
+							{
+								"label": "6",
+								"value": "right: var(--spacer-6);"
+							},
+							{
+								"label": "7",
+								"value": "right: var(--spacer-7);"
+							},
+							{
+								"label": "8",
+								"value": "right: var(--spacer-8);"
+							},
+							{
+								"label": "9",
+								"value": "right: var(--spacer-9);"
+							},
+							{
+								"label": "10",
+								"value": "right: var(--spacer-10);"
+							}
+						]
+					}
+				},
+				{
+					"dataType": "string",
+					"defaultValue": "",
+					"label": "bottom",
+					"name": "bottom",
+					"type": "select",
+					"typeOptions": {
+						"validValues": [
+							{
+								"label": "none",
+								"value": ""
+							},
+							{
+								"label": "0",
+								"value": "bottom: var(--spacer-0);"
+							},
+							{
+								"label": "1",
+								"value": "bottom: var(--spacer-1);"
+							},
+							{
+								"label": "2",
+								"value": "bottom: var(--spacer-2);"
+							},
+							{
+								"label": "3",
+								"value": "bottom: var(--spacer-3);"
+							},
+							{
+								"label": "4",
+								"value": "bottom: var(--spacer-4);"
+							},
+							{
+								"label": "5",
+								"value": "bottom: var(--spacer-5);"
+							},
+							{
+								"label": "6",
+								"value": "bottom: var(--spacer-6);"
+							},
+							{
+								"label": "7",
+								"value": "bottom: var(--spacer-7);"
+							},
+							{
+								"label": "8",
+								"value": "bottom: var(--spacer-8);"
+							},
+							{
+								"label": "9",
+								"value": "bottom: var(--spacer-9);"
+							},
+							{
+								"label": "10",
+								"value": "bottom: var(--spacer-10);"
+							}
+						]
+					}
+				},
+				{
+					"dataType": "string",
+					"defaultValue": "",
+					"label": "left",
+					"name": "left",
+					"type": "select",
+					"typeOptions": {
+						"validValues": [
+							{
+								"label": "none",
+								"value": ""
+							},
+							{
+								"label": "0",
+								"value": "left: var(--spacer-0);"
+							},
+							{
+								"label": "1",
+								"value": "left: var(--spacer-1);"
+							},
+							{
+								"label": "2",
+								"value": "left: var(--spacer-2);"
+							},
+							{
+								"label": "3",
+								"value": "left: var(--spacer-3);"
+							},
+							{
+								"label": "4",
+								"value": "left: var(--spacer-4);"
+							},
+							{
+								"label": "5",
+								"value": "left: var(--spacer-5);"
+							},
+							{
+								"label": "6",
+								"value": "left: var(--spacer-6);"
+							},
+							{
+								"label": "7",
+								"value": "left: var(--spacer-7);"
+							},
+							{
+								"label": "8",
+								"value": "left: var(--spacer-8);"
+							},
+							{
+								"label": "9",
+								"value": "left: var(--spacer-9);"
+							},
+							{
+								"label": "10",
+								"value": "left: var(--spacer-10);"
+							}
+						]
+					}
+				}
+			]
+		}
+	]
+}
