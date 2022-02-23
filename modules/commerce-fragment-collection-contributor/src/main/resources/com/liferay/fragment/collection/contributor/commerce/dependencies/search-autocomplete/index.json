@@ -1,0 +1,33 @@
+{
+	"fieldSets": [
+		{
+			"fields": [
+				{
+					"defaultValue": "70vw",
+					"label": "search-results-width",
+					"name": "width",
+					"type": "text"
+				},
+				{
+					"dataType": "string",
+					"defaultValue": "left: 0;",
+					"label": "search-results-alignment",
+					"name": "alignment",
+					"type": "select",
+					"typeOptions": {
+						"validValues": [
+							{
+								"label": "left",
+								"value": "left: 0;"
+							},
+							{
+								"label": "right",
+								"value": "right: 0;"
+							}
+						]
+					}
+				}
+			]
+		}
+	]
+}

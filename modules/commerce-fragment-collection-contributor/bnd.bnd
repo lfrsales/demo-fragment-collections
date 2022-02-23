@@ -1,0 +1,5 @@
+Bundle-Name: commerce-fragment-collection-contributor
+Bundle-SymbolicName: com.liferay.fragment.collection.contributor.commerce
+Bundle-Version: 1.0.0
+Web-ContextPath: /commerce-fragment-collection-contributor
+-dsannotations-options: inherit

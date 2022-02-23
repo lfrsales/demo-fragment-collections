@@ -1,0 +1,13 @@
+<div class="mini-cart-fragment ${fragmentEntryLinkNamespace}">
+	<style>
+		.${fragmentEntryLinkNamespace} {
+			--mini-cart-icon-color: ${configuration.iconColor};
+		}
+	</style>
+
+	[@liferay_commerce_ui["mini-cart"]
+		displayTotalItemsQuantity=configuration.displayTotalItemsQuantity
+		spritemap="${themeDisplay.getPathThemeImages()}/clay/icons.svg"
+		toggleable=true
+	/]
+</div>

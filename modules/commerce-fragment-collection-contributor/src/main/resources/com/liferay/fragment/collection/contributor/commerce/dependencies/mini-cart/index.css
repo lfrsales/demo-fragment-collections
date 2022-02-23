@@ -1,0 +1,17 @@
+.mini-cart-fragment .mini-cart {
+	height: auto;
+	position: relative;
+	right: auto;
+	top: auto;
+	width: auto;
+}
+
+.mini-cart-fragment .mini-cart-opener {
+	color: var(--mini-cart-icon-color);
+	position: relative;
+}
+
+.mini-cart-fragment .is-open .mini-cart-overlay,
+.mini-cart-fragment .mini-cart-wrapper {
+	position: fixed;
+}

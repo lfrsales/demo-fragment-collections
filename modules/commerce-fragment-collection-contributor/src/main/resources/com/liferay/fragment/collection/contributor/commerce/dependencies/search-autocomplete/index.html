@@ -1,0 +1,14 @@
+[#assign namespace = random.nextInt() /]
+
+<div class="commerce-search-fragment css-container-${namespace}">
+	<style>
+		.commerce-search-fragment.css-container-${namespace} .commerce-suggestions {
+			${configuration.alignment}
+			width: ${configuration.width};
+		}
+	</style>
+
+	[@liferay_commerce_ui["search-bar"] /]
+
+	[@liferay_commerce_ui["search-results"] /]
+</div>
