@@ -3,18 +3,16 @@
 		{
 			"fields": [
 				{
-					"dataType": "string",
-					"defaultValue": "#ee0979",
+					"defaultValue": "var(--color-brand-primary)",
 					"label": "starting-color",
 					"name": "startingColor",
-					"type": "text"
+					"type": "colorPicker"
 				},
 				{
-					"dataType": "string",
-					"defaultValue": "#ff6a00",
+					"defaultValue": "var(--color-brand-secondary)",
 					"label": "finishing-color",
 					"name": "finishingColor",
-					"type": "text"
+					"type": "colorPicker"
 				},
 				{
 					"dataType": "string",

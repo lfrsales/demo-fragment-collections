@@ -10,7 +10,7 @@
 		<div aria-hidden="true" class="video-container"></div>
 		<div aria-hidden="true" class="video-mask"></div>
 
-		<div class="dropdown playback-rate-dropdown hide">
+		<div class="dropdown hide playback-rate-dropdown">
 			<button class="btn btn-monospaced dropdown-toggle text-white" data-toggle="liferay-dropdown">
 				[@clay["icon"] symbol="cog" /]
 			</button>
@@ -46,7 +46,7 @@
 	</div>
 
 	[#if configuration.useMappableUrl]
-		<div class="mappable-url text-truncate label label-secondary mt-2 hide">
+		<div class="hide label label-secondary mappable-url mt-2 text-truncate">
 			<lfr-editable id="mappableUrl" type="text">Click here to map your video.</lfr-editable>
 		</div>
 	[/#if]

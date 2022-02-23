@@ -5,14 +5,8 @@
 	[#assign liferaySharedLayoutAssetEntry = (request.getAttribute("LIFERAY_SHARED_LAYOUT_ASSET_ENTRY"))! /]
 
 	[#if infoListDisplayObject?has_content]
-		[#assign assetEntryLocalService = serviceLocator.findService("com.liferay.asset.kernel.service.AssetEntryLocalService") /]
-
 		[#assign modelClassName = infoListDisplayObject.modelClassName! /]
 		[#assign resourcePrimKey = infoListDisplayObject.resourcePrimKey! /]
-
-		[#if modelClassName?has_content && resourcePrimKey?has_content]
-			[#assign assetEntry = assetEntryLocalService.getEntry(modelClassName, resourcePrimKey) /]
-		[/#if]
 	[#elseif liferaySharedLayoutAssetEntry?has_content]
 		[#assign assetEntry = (request.getAttribute("LIFERAY_SHARED_LAYOUT_ASSET_ENTRY"))! /]
 	[/#if]

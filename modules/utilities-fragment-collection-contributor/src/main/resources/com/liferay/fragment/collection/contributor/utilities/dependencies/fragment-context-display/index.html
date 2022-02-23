@@ -11,14 +11,7 @@
 	<fieldset class="panel" role="group">
 		<div class="panel-heading" role="presentation">
 			<div>
-				<a
-					aria-controls="${id}"
-					aria-expanded="false"
-					class="collapse-icon sheet-subtitle collapsed"
-					data-toggle="liferay-collapse"
-					href="#${id}"
-					role="button"
-				>
+			<a aria-controls="${id}" aria-expanded="false" class="collapse-icon collapsed sheet-subtitle" data-toggle="liferay-collapse" href="#${id}" role="button">
 					${title}
 					<span class="collapse-icon-closed" id="icon${id}">
 						[@clay["icon"] symbol="angle-right" /]
@@ -30,8 +23,8 @@
 			</div>
 		</div>
 
-		<div class="panel-collapse collapse" id="${id}" role="presentation">
-			<div class="panel-body p-0">
+		<div class="collapse panel-collapse" id="${id}" role="presentation">
+			<div class="p-0 panel-body">
 				[#nested]
 			</div>
 		</div>
@@ -107,12 +100,12 @@
 	[#if infoListDisplayObject?has_content]
 		[@renderObj object=infoListDisplayObject title='request.getAttribute("INFO_LIST_DISPLAY_OBJECT")' /]
 
-		[#assign assetEntryLocalService = serviceLocator.findService("com.liferay.asset.kernel.service.AssetEntryLocalService") /]
-
 		[#assign modelClassName = infoListDisplayObject.modelClassName! /]
 		[#assign resourcePrimKey = infoListDisplayObject.resourcePrimKey! /]
 
-		[#if modelClassName?has_content && resourcePrimKey?has_content]
+		[#if modelClassName?has_content && resourcePrimKey?has_content && serviceLocator??]
+			[#assign assetEntryLocalService = serviceLocator.findService("com.liferay.asset.kernel.service.AssetEntryLocalService") /]
+
 			<div class="alert alert-info">
 				[#noparse]
 					<p>In order to use the <em>serviceLocator</em> you must remove it from the "Restricted Classes" list for the FreeMarker Enginer. This can be found in the control panel under "System Settings > Template Engines > FreeMarker Engine".</p>
