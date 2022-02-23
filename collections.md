@@ -1,3 +1,41 @@
+<h2>SE Dialect</h2>
+
+A collection of fragments that are based on the Dialect theme.
+
+<h3>Dialect Button</h3>
+
+Configuration | Type | Default Value | Description
+------------- | ---- | ------------- | -------------
+Type | select | solid | 
+Style | select | primary | 
+Size | select |  | 
+Inverted | checkbox | False | 
+Uppercase | checkbox | False | 
+
+<h3>Dialect Nav</h3>
+
+Configuration | Type | Default Value | Description
+------------- | ---- | ------------- | -------------
+Style | select | nav-primary | 
+Orientation | select | nav-horizontal | 
+Inverted | checkbox | False | 
+
+<h3>Dialect Text</h3>
+
+Configuration | Type | Default Value | Description
+------------- | ---- | ------------- | -------------
+Text Type | select | h1 | 
+
+<h3>Dialect Label</h3>
+
+Configuration | Type | Default Value | Description
+------------- | ---- | ------------- | -------------
+Type | select |  | 
+Variant | select | primary | 
+Size | select | small | 
+Icon Before | text |  | 
+Icon After | text |  | 
+
 <h2>SE Header Components</h2>
 
 A collection of fragments that can be used to build a page header.
@@ -91,6 +129,24 @@ Configuration | Type | Default Value | Description
 Delay in ms to Show Modal | text | 3000 | 
 Footer Button Type | select | primary | 
 Modal Vertical Alignment | select |  | 
+
+<h3>Dialect Overlay Item</h3>
+
+Configuration | Type | Default Value | Description
+------------- | ---- | ------------- | -------------
+Disable Overlay In Edit Mode | checkbox | True | 
+Center | checkbox | False | 
+Top | select |  | 
+Right | select |  | 
+Bottom | select |  | 
+Left | select |  | 
+
+<h3>Scoped CSS</h3>
+
+Configuration | Type | Default Value | Description
+------------- | ---- | ------------- | -------------
+Selector | text | .btn | 
+Properties | text | background-color: blue; | 
 
 <h2>SE Integrations</h2>
 
@@ -224,13 +280,36 @@ Heading Level | select | display-2 |
 
 Configuration | Type | Default Value | Description
 ------------- | ---- | ------------- | -------------
-Starting Color | text | #ee0979 | 
-Finishing Color | text | #ff6a00 | 
+Starting Color | colorPicker | var(--color-brand-primary) | 
+Finishing Color | colorPicker | var(--color-brand-secondary) | 
 Angle | text | 90deg | 
 
 <h3>Parallax Container</h3>
 
 ![Image of Parallax Container](./modules/formed-components-fragment-collection-contributor/src/main/resources/META-INF/resources/thumbnails/parallax-container.png)
+
+<h2>SE Commerce</h2>
+
+A collection of utility fragments that can be used to help create pages.
+
+<h3>Mini Cart</h3>
+
+Configuration | Type | Default Value | Description
+------------- | ---- | ------------- | -------------
+Icon Color | colorPicker | var(--gray-600) | 
+Display Total Items Quantity | checkbox | True | 
+
+<h3>Account Selector</h3>
+
+Configuration | Type | Default Value | Description
+------------- | ---- | ------------- | -------------
+
+<h3>Search Autocomplete</h3>
+
+Configuration | Type | Default Value | Description
+------------- | ---- | ------------- | -------------
+Search Results Width | text | 70vw | 
+Search Results Alignment | select | left: 0; | 
 
 <h2>SE Billboard Charts</h2>
 
