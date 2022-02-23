@@ -54,9 +54,10 @@ for module in glob.glob("./modules/*-fragment-collection-contributor"):
 		if "description" in fragmentJSONData:
 			collectionsReadmeFile.write(fragmentJSONData["description"] + "\n\n")
 
-		thumbnailPath = module + "/src/main/resources/META-INF/resources/thumbnails/" + fragmentJSONData["thumbnail"]
+		if "thumbnail" in fragmentJSONData:
+			thumbnailPath = module + "/src/main/resources/META-INF/resources/thumbnails/" + fragmentJSONData["thumbnail"]
 
-		collectionsReadmeFile.write("![Image of " + fragmentName + "](" + thumbnailPath + ")\n\n")
+			collectionsReadmeFile.write("![Image of " + fragmentName + "](" + thumbnailPath + ")\n\n")
 
 		if os.stat(fragment + "/index.json").st_size != 0:
 			indexJSON = open(fragment + "/index.json")
