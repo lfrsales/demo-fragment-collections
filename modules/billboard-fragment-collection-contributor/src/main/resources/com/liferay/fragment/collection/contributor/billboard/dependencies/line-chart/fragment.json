@@ -1,5 +1,6 @@
 {
 	"fragmentEntryKey": "lineChart",
+	"icon": "analytics",
 	"name": "line-chart",
 	"thumbnail": "line-chart.png",
 	"type": "component"

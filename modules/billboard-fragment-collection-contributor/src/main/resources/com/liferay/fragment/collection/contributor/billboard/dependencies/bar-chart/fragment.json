@@ -1,5 +1,6 @@
 {
 	"fragmentEntryKey": "barChart",
+	"icon": "analytics",
 	"name": "bar-chart",
 	"thumbnail": "bar-chart.png",
 	"type": "component"

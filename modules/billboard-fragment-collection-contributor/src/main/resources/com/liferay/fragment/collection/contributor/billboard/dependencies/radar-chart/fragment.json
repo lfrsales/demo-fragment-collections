@@ -1,5 +1,6 @@
 {
 	"fragmentEntryKey": "radarChart",
+	"icon": "analytics",
 	"name": "radar-chart",
 	"thumbnail": "radar-chart.png",
 	"type": "component"

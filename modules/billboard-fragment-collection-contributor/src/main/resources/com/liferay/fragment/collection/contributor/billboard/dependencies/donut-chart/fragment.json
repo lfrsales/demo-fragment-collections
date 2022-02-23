@@ -1,5 +1,6 @@
 {
 	"fragmentEntryKey": "donutChart",
+	"icon": "analytics",
 	"name": "donut-chart",
 	"thumbnail": "donut-chart.png",
 	"type": "component"
